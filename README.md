@@ -181,8 +181,8 @@ grub.almalinux,2,AlmaLinux,grub2,2.02-123.el8_6.8.alma,mail:security@almalinux.o
 
 fwupd:
 sbat,1,UEFI shim,sbat,1,https://github.com/rhboot/shim/blob/main/SBAT.md
-fwupd,1,Firmware update daemon,fwupd,1.5.9,https://github.com/fwupd/fwupd
-fwupd.almalinux,1,AlmaLinux,fwupd,1.5.9,mail:security@almalinux.org
+fwupd-efi,1,Firmware update daemon,fwupd-efi,1.1,https://github.com/fwupd/fwupd
+fwupd-efi.almalinux,1,AlmaLinux,fwupd,1.7.4,mail:security@almalinux.org
 ```
 
 -------------------------------------------------------------------------------
