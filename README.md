@@ -52,7 +52,7 @@ This is the unmodified shim-15.6 release.
 ### URL for a repo that contains the exact code which was built to get this binary:
 -------------------------------------------------------------------------------
 https://github.com/rhboot/shim/tree/15.6
-Source rpm is: https://github.com/AlmaLinux/shim-review/blob/main/shim-unsigned-x64-15.6-1.el8.alma.src.rpm  
+Source rpm is: https://github.com/AlmaLinux/shim-review/blob/main/shim-unsigned-x64-15.6-1.el8.alma.1.src.rpm  
 Repos for build deps etc are: http://repo.almalinux.org/almalinux/8/
 
 -------------------------------------------------------------------------------
@@ -94,7 +94,7 @@ This is a "RHEL-like" implementation.
 ### Were old shims hashes provided to Microsoft for verification and to be added to future DBX updates?
 ### Does your new chain of trust disallow booting old GRUB2 builds affected by the CVEs?
 -------------------------------------------------------------------------------
-This is our first submission so no old grub2 binaries allowed.
+This is our first submission so no old grub2 binaries available.
 
 -------------------------------------------------------------------------------
 ### If your boot chain of trust includes a Linux kernel:
@@ -149,8 +149,8 @@ This is our first submission.
 -------------------------------------------------------------------------------
 ### What is the SHA256 hash of your final SHIM binary?
 -------------------------------------------------------------------------------
-f60f1d5574f5cccc3aa0fc789411cb90186768a86c73975fcab89aae3fd09c3e  shimia32.efi
-f1a5c6941bf0bd1457497a9b711b6671e20986b0f6d033259aab0d2809fc71aa  shimx64.efi
+bfa0e10640c38b32bcd69ef7bf482c1084acb20447ae68b329e3f85377353a9f  shimia32.efi
+dff56ad39c7fb354e4bf0f2866b7da7b45dab472a26e2e5b671363e0c7898354  shimx64.efi
 
 -------------------------------------------------------------------------------
 ### How do you manage and protect the keys used in your SHIM?
@@ -170,14 +170,14 @@ Yes
 ```
 shim:
 sbat,1,SBAT Version,sbat,1,https://github.com/rhboot/shim/blob/main/SBAT.md
-shim,1,UEFI shim,shim,1,https://github.com/rhboot/shim
-shim.almalinux,1,AlmaLinux OS Foundation,shim,15.6,security@almalinux.org
+shim,2,UEFI shim,shim,1,https://github.com/rhboot/shim
+shim.almalinux,2,AlmaLinux,shim,15.6,security@almalinux.org
 
 grub2:
 sbat,1,SBAT Version,sbat,1,https://github.com/rhboot/shim/blob/main/SBAT.md
-grub,1,Free Software Foundation,grub,2.02,https://www.gnu.org/software/grub/
-grub.rhel8,1,Red Hat Enterprise Linux 8,grub2,1:2.02-120.el8,mail:secalert@redhat.com
-grub.almalinux8,1,AlmaLinux 8,grub2,1:2.02-120.el8.alma,mail:security@almalinux.org
+grub,2,Free Software Foundation,grub,2.02,https//www.gnu.org/software/grub/
+grub.rh,2,Red Hat,grub2,2.02-123.el8_6.8,mailto:secalert@redhat.com
+grub.almalinux,2,AlmaLinux,grub2,2.02-123.el8_6.8.alma,mail:security@almalinux.org
 
 fwupd:
 sbat,1,UEFI shim,sbat,1,https://github.com/rhboot/shim/blob/main/SBAT.md
@@ -190,7 +190,7 @@ fwupd.almalinux,1,AlmaLinux,fwupd,1.5.9,mail:security@almalinux.org
 -------------------------------------------------------------------------------
 `all_video boot blscfg btrfs cat configfile cryptodisk echo ext2 fat font
 gcry_rijndael gcry_rsa gcry_serpent gcry_sha256 gcry_twofish gcry_whirlpool
-gfxmenu gfxterm gzio halt hfsplus http increment iso9660 jpeg loadenv loopback
+gfxmenu gfxterm gzio halt http increment iso9660 jpeg loadenv loopback
 linux lvm luks mdraid09 mdraid1x minicmd net normal part_apple part_msdos
 part_gpt password_pbkdf2 png reboot regexp search search_fs_uuid search_fs_file
 search_label serial sleep syslinuxcfg test tftp video xfs efi_netfs efifwsetup
@@ -200,7 +200,7 @@ usbserial_pl2303 usbserial_ftdi usbserial_usbdebug keylayouts at_keyboard`
 -------------------------------------------------------------------------------
 ### What is the origin and full version number of your bootloader (GRUB or other)?
 -------------------------------------------------------------------------------
-`RHEL 8 downstream, grub2-2.02-123.el8.alma`
+`RHEL 8 downstream, grub2-2.02-123.el8_6.8.alma`
 https://git.almalinux.org/rpms/grub2/src/branch/a8
 
 -------------------------------------------------------------------------------
@@ -234,4 +234,3 @@ Boot and relevant bug fixes.
 -------------------------------------------------------------------------------
 ### Add any additional information you think we may need to validate this shim.
 -------------------------------------------------------------------------------
-
