@@ -195,8 +195,8 @@ Update shim from 15.6 to 15.8 and include new certificate.
 *******************************************************************************
 ### What is the SHA256 hash of your final SHIM binary?
 *******************************************************************************
-0604d3f8ae34eff376bb6d0746ab0525f7fafd5a0b8ac01ee74b996996cc68a9 shimia32.efi
-e0df79051ec08619662fccdc076ca20fb14e8b0338d8aa46cb0063b668185f14 shimx64.efi
+a872d4a6b1ae5ed2827825a64b7c4feb792f86d1726cf178f0747e11036b7cf9  shimx64.efi
+be32ae82e0b75dcee8b79c22531bb908e4ac736636ba648ae835cec8c5e8680f  shimia32.efi
 
 *******************************************************************************
 ### How do you manage and protect the keys used in your SHIM?
