@@ -1,0 +1,1178 @@
+INFO buildroot.py:603:  Mock Version: 5.5
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root
+DEBUG file_util.py:21:  created dir: /var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root
+DEBUG file_util.py:18:  ensuring that dir exists: /srv/alternatives/castor/build_node/builder-0/166668/rpm_result
+INFO buildroot.py:284:  calling preinit hooks
+DEBUG file_util.py:18:  ensuring that dir exists: /var/cache/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root_cache/
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:558:  Executing command: ['/bin/tar', '--use-compress-program', 'pigz', '-xf', '/var/cache/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root_cache/cache.tar.gz', '-C', '/var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:610:  Child return code was: 0
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/./proc
+DEBUG file_util.py:21:  created dir: /var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/./proc
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/./sys
+DEBUG file_util.py:21:  created dir: /var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/./sys
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/./dev
+DEBUG file_util.py:21:  created dir: /var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/./dev
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/./tmp/ccache
+DEBUG file_util.py:21:  created dir: /var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/./tmp/ccache
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/./var/cache/yum
+DEBUG file_util.py:21:  created dir: /var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/./var/cache/yum
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/./var/cache/dnf
+DEBUG file_util.py:21:  created dir: /var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/./var/cache/dnf
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/./var/log
+DEBUG file_util.py:21:  created dir: /var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/./var/log
+DEBUG file_util.py:18:  ensuring that dir exists: /var/cache/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/yum_cache
+DEBUG file_util.py:18:  ensuring that dir exists: /var/cache/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/dnf_cache
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:558:  Executing command: ['/usr/bin/lscpu'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:463:  Architecture:                       aarch64
+DEBUG util.py:463:  CPU op-mode(s):                     32-bit, 64-bit
+DEBUG util.py:463:  Byte Order:                         Little Endian
+DEBUG util.py:463:  CPU(s):                             160
+DEBUG util.py:463:  On-line CPU(s) list:                0-159
+DEBUG util.py:463:  Vendor ID:                          ARM
+DEBUG util.py:463:  Model name:                         Neoverse-N1
+DEBUG util.py:463:  Model:                              1
+DEBUG util.py:463:  Thread(s) per core:                 1
+DEBUG util.py:463:  Core(s) per socket:                 80
+DEBUG util.py:463:  Socket(s):                          2
+DEBUG util.py:463:  Stepping:                           r3p1
+DEBUG util.py:463:  Frequency boost:                    disabled
+DEBUG util.py:463:  CPU max MHz:                        3000.0000
+DEBUG util.py:463:  CPU min MHz:                        1000.0000
+DEBUG util.py:463:  BogoMIPS:                           50.00
+DEBUG util.py:463:  Flags:                              fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm lrcpc dcpop asimddp ssbs
+DEBUG util.py:463:  L1d cache:                          10 MiB (160 instances)
+DEBUG util.py:463:  L1i cache:                          10 MiB (160 instances)
+DEBUG util.py:463:  L2 cache:                           160 MiB (160 instances)
+DEBUG util.py:463:  NUMA node(s):                       2
+DEBUG util.py:463:  NUMA node0 CPU(s):                  0-79
+DEBUG util.py:463:  NUMA node1 CPU(s):                  80-159
+DEBUG util.py:463:  Vulnerability Gather data sampling: Not affected
+DEBUG util.py:463:  Vulnerability Itlb multihit:        Not affected
+DEBUG util.py:463:  Vulnerability L1tf:                 Not affected
+DEBUG util.py:463:  Vulnerability Mds:                  Not affected
+DEBUG util.py:463:  Vulnerability Meltdown:             Not affected
+DEBUG util.py:463:  Vulnerability Mmio stale data:      Not affected
+DEBUG util.py:463:  Vulnerability Retbleed:             Not affected
+DEBUG util.py:463:  Vulnerability Spec rstack overflow: Not affected
+DEBUG util.py:463:  Vulnerability Spec store bypass:    Mitigation; Speculative Store Bypass disabled via prctl
+DEBUG util.py:463:  Vulnerability Spectre v1:           Mitigation; __user pointer sanitization
+DEBUG util.py:463:  Vulnerability Spectre v2:           Mitigation; CSV2, BHB
+DEBUG util.py:463:  Vulnerability Srbds:                Not affected
+DEBUG util.py:463:  Vulnerability Tsx async abort:      Not affected
+DEBUG util.py:610:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:558:  Executing command: ['/bin/free'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:463:                 total        used        free      shared  buff/cache   available
+DEBUG util.py:463:  Mem:       261376200     8712724   233103656     4221208    25399904   252663476
+DEBUG util.py:463:  Swap:       67108860           0    67108860
+DEBUG util.py:610:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:558:  Executing command: ['/bin/df', '-H', '-T', '/var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root', '/var/cache/mock'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:463:  Filesystem     Type  Size  Used Avail Use% Mounted on
+DEBUG util.py:463:  /dev/nvme0n1p4 ext4  845G   15G  787G   2% /
+DEBUG util.py:463:  /dev/nvme0n1p4 ext4  845G   15G  787G   2% /
+DEBUG util.py:610:  Child return code was: 0
+DEBUG buildroot.py:659:  create skeleton dirs
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/var/lib/rpm
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/var/lib/yum
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/var/lib/dbus
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/var/log
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/var/cache/dnf
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/var/cache/yum
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/etc/rpm
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/tmp
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/tmp/ccache
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/var/tmp
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/etc/dnf
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/etc/dnf/vars
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/etc/yum.repos.d
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/etc/yum
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/proc
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/sys
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/dev/pts
+DEBUG file_util.py:21:  created dir: /var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/dev/pts
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/dev/shm
+DEBUG file_util.py:21:  created dir: /var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/dev/shm
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/dev/mapper
+DEBUG file_util.py:21:  created dir: /var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/dev/mapper
+DEBUG buildroot.py:803:  kernel version == 5.14.0-362.24.2.el9_3.aarch64
+DEBUG file_util.py:30:  touching file: /var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/etc/fstab
+DEBUG file_util.py:30:  touching file: /var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/etc/yum/yum.conf
+DEBUG file_util.py:30:  touching file: /var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/etc/dnf/dnf.conf
+DEBUG file_util.py:30:  touching file: /var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/var/log/yum.log
+DEBUG buildroot.py:298:  rootdir = /var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root
+DEBUG buildroot.py:299:  resultdir = /srv/alternatives/castor/build_node/builder-0/166668/rpm_result
+DEBUG package_manager.py:56:  searching for 'dnf' package manager or alternatives
+INFO buildroot.py:174:  Package manager dnf detected and used (fallback)
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/etc/pki/mock
+DEBUG file_util.py:158:  Updating files in /var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/etc/pki/ca-trust with files from /etc/pki/ca-trust
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/etc/pki/ca-trust
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/etc/pki/ca-trust/./source
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/etc/pki/ca-trust/./extracted
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/etc/pki/ca-trust/source/anchors
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/etc/pki/ca-trust/source/blocklist
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/etc/pki/ca-trust/extracted/edk2
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/etc/pki/ca-trust/extracted/java
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/etc/pki/ca-trust/extracted/pem
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/etc/pki/ca-trust/extracted/openssl
+DEBUG file_util.py:158:  Updating files in /var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/usr/share/pki/ca-trust-source with files from /usr/share/pki/ca-trust-source
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/usr/share/pki/ca-trust-source
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/usr/share/pki/ca-trust-source/./anchors
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/usr/share/pki/ca-trust-source/./blocklist
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/etc/dnf
+DEBUG package_manager.py:683:  configure DNF vars
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/var/cache/yum
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:558:  Executing command: ['/bin/mount', '-n', '-o', 'bind', '/var/cache/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/yum_cache', '/var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/var/cache/yum'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:610:  Child return code was: 0
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/var/cache/dnf
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:558:  Executing command: ['/bin/mount', '-n', '-o', 'bind', '/var/cache/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/dnf_cache', '/var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/var/cache/dnf'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:610:  Child return code was: 0
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/etc
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/etc
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:558:  Executing command: ['rpm', '-q', 'rpm', 'rpm-sequoia', 'python3-dnf', 'python3-dnf-plugins-core', 'yum', 'yum-utils', 'dnf5', 'dnf5-plugins'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:463:  rpm-4.16.1.3-27.el9_3.aarch64
+DEBUG util.py:463:  package rpm-sequoia is not installed
+DEBUG util.py:463:  python3-dnf-4.14.0-8.el9.alma.1.noarch
+DEBUG util.py:463:  python3-dnf-plugins-core-4.3.0-11.el9_3.alma.1.noarch
+DEBUG util.py:463:  yum-4.14.0-8.el9.alma.1.noarch
+DEBUG util.py:463:  yum-utils-4.3.0-11.el9_3.alma.1.noarch
+DEBUG util.py:463:  package dnf5 is not installed
+DEBUG util.py:463:  package dnf5-plugins is not installed
+DEBUG util.py:610:  Child return code was: 3
+INFO package_manager.py:195:  Buildroot is handled by package management from host and used with --installroot:
+  rpm-4.16.1.3-27.el9_3.aarch64
+  python3-dnf-4.14.0-8.el9.alma.1.noarch
+  python3-dnf-plugins-core-4.3.0-11.el9_3.alma.1.noarch
+  yum-4.14.0-8.el9.alma.1.noarch
+  yum-utils-4.3.0-11.el9_3.alma.1.noarch
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:558:  Executing command: ['/bin/rpm', '-qa', '--root', '/var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:463:  libgcc-8.5.0-22.el8_10.aarch64
+DEBUG util.py:463:  crypto-policies-20230731-1.git3177e06.el8.noarch
+DEBUG util.py:463:  python-srpm-macros-3-45.el8.noarch
+DEBUG util.py:463:  python3-setuptools-wheel-39.2.0-7.el8.noarch
+DEBUG util.py:463:  python3-pip-wheel-9.0.3-24.el8.noarch
+DEBUG util.py:463:  python-rpm-macros-3-45.el8.noarch
+DEBUG util.py:463:  python3-rpm-macros-3-45.el8.noarch
+DEBUG util.py:463:  tzdata-2024a-1.el8.noarch
+DEBUG util.py:463:  publicsuffix-list-dafsa-20180723-1.el8.noarch
+DEBUG util.py:463:  pkgconf-m4-1.4.2-1.el8.noarch
+DEBUG util.py:463:  ncurses-base-6.1-10.20180224.el8.noarch
+DEBUG util.py:463:  libssh-config-0.9.6-14.el8.noarch
+DEBUG util.py:463:  kernel-headers-4.18.0-553.8.1.el8_10.aarch64
+DEBUG util.py:463:  almalinux-release-8.10-1.el8.aarch64
+DEBUG util.py:463:  setup-2.12.2-9.el8.noarch
+DEBUG util.py:463:  filesystem-3.8-6.el8.aarch64
+DEBUG util.py:463:  basesystem-11-5.el8.noarch
+DEBUG util.py:463:  pcre2-10.32-3.el8_6.aarch64
+DEBUG util.py:463:  libselinux-2.9-8.el8.aarch64
+DEBUG util.py:463:  glibc-all-langpacks-2.28-251.el8_10.2.aarch64
+DEBUG util.py:463:  ncurses-libs-6.1-10.20180224.el8.aarch64
+DEBUG util.py:463:  glibc-gconv-extra-2.28-251.el8_10.2.aarch64
+DEBUG util.py:463:  glibc-common-2.28-251.el8_10.2.aarch64
+DEBUG util.py:463:  glibc-2.28-251.el8_10.2.aarch64
+DEBUG util.py:463:  bash-4.4.20-5.el8.aarch64
+DEBUG util.py:463:  libsepol-2.9-3.el8.aarch64
+DEBUG util.py:463:  zlib-1.2.11-25.el8.aarch64
+DEBUG util.py:463:  info-6.5-7.el8.aarch64
+DEBUG util.py:463:  bzip2-libs-1.0.6-26.el8.aarch64
+DEBUG util.py:463:  xz-libs-5.2.4-4.el8_6.aarch64
+DEBUG util.py:463:  gmp-6.1.2-11.el8.aarch64
+DEBUG util.py:463:  libstdc++-8.5.0-22.el8_10.aarch64
+DEBUG util.py:463:  libxcrypt-4.1.1-6.el8.aarch64
+DEBUG util.py:463:  libzstd-1.4.4-1.el8.aarch64
+DEBUG util.py:463:  elfutils-libelf-0.190-2.el8.aarch64
+DEBUG util.py:463:  mpfr-3.1.6-1.el8.aarch64
+DEBUG util.py:463:  readline-7.0-10.el8.aarch64
+DEBUG util.py:463:  sqlite-libs-3.26.0-19.el8_9.aarch64
+DEBUG util.py:463:  libcap-2.48-6.el8_9.aarch64
+DEBUG util.py:463:  libcom_err-1.45.6-5.1.el8.alma.1.aarch64
+DEBUG util.py:463:  popt-1.18-1.el8.aarch64
+DEBUG util.py:463:  chkconfig-1.19.2-1.el8.aarch64
+DEBUG util.py:463:  libuuid-2.32.1-46.el8.aarch64
+DEBUG util.py:463:  libunistring-0.9.9-3.el8.aarch64
+DEBUG util.py:463:  libattr-2.4.48-3.el8.aarch64
+DEBUG util.py:463:  libacl-2.2.53-3.el8.aarch64
+DEBUG util.py:463:  sed-4.5-5.el8.aarch64
+DEBUG util.py:463:  libffi-3.1-24.el8.aarch64
+DEBUG util.py:463:  p11-kit-0.23.22-2.el8.aarch64
+DEBUG util.py:463:  libgpg-error-1.31-1.el8.aarch64
+DEBUG util.py:463:  lua-libs-5.3.4-12.el8.aarch64
+DEBUG util.py:463:  libidn2-2.2.0-1.el8.aarch64
+DEBUG util.py:463:  libmpc-1.1.0-9.1.el8.aarch64
+DEBUG util.py:463:  file-libs-5.33-26.el8.aarch64
+DEBUG util.py:463:  less-530-3.el8_10.aarch64
+DEBUG util.py:463:  expat-2.2.5-13.el8_10.aarch64
+DEBUG util.py:463:  gdbm-libs-1.18-2.el8.aarch64
+DEBUG util.py:463:  file-5.33-26.el8.aarch64
+DEBUG util.py:463:  libgcrypt-1.8.5-7.el8_6.aarch64
+DEBUG util.py:463:  libxml2-2.9.7-18.el8_10.1.aarch64
+DEBUG util.py:463:  unzip-6.0-46.el8.aarch64
+DEBUG util.py:463:  findutils-4.6.0-22.el8.aarch64
+DEBUG util.py:463:  elfutils-default-yama-scope-0.190-2.el8.noarch
+DEBUG util.py:463:  elfutils-libs-0.190-2.el8.aarch64
+DEBUG util.py:463:  glibc-headers-2.28-251.el8_10.2.aarch64
+DEBUG util.py:463:  keyutils-libs-1.5.10-9.el8.aarch64
+DEBUG util.py:463:  libcap-ng-0.7.11-1.el8.aarch64
+DEBUG util.py:463:  audit-libs-3.1.2-1.el8.aarch64
+DEBUG util.py:463:  libtasn1-4.13-4.el8_7.aarch64
+DEBUG util.py:463:  p11-kit-trust-0.23.22-2.el8.aarch64
+DEBUG util.py:463:  lz4-libs-1.8.3-3.el8_4.aarch64
+DEBUG util.py:463:  pcre-8.42-6.el8.aarch64
+DEBUG util.py:463:  grep-3.1-6.el8.aarch64
+DEBUG util.py:463:  xz-5.2.4-4.el8_6.aarch64
+DEBUG util.py:463:  libsemanage-2.9-9.el8_6.aarch64
+DEBUG util.py:463:  elfutils-0.190-2.el8.aarch64
+DEBUG util.py:463:  zip-3.0-23.el8.aarch64
+DEBUG util.py:463:  xml-common-0.6.3-50.el8.noarch
+DEBUG util.py:463:  iso-codes-3.79-2.el8.noarch
+DEBUG util.py:463:  gdbm-1.18-2.el8.aarch64
+DEBUG util.py:463:  cpp-8.5.0-22.el8_10.aarch64
+DEBUG util.py:463:  libpsl-0.20.2-6.el8.aarch64
+DEBUG util.py:463:  libassuan-2.5.1-3.el8.aarch64
+DEBUG util.py:463:  libksba-1.3.5-9.el8_7.aarch64
+DEBUG util.py:463:  groff-base-1.22.3-18.el8.aarch64
+DEBUG util.py:463:  tar-1.30-9.el8.aarch64
+DEBUG util.py:463:  patch-2.7.6-11.el8.aarch64
+DEBUG util.py:463:  dwz-0.12-10.el8.aarch64
+DEBUG util.py:463:  libstdc++-devel-8.5.0-22.el8_10.aarch64
+DEBUG util.py:463:  libasan-8.5.0-22.el8_10.aarch64
+DEBUG util.py:463:  libubsan-8.5.0-22.el8_10.aarch64
+DEBUG util.py:463:  isl-0.16.1-6.el8.aarch64
+DEBUG util.py:463:  nettle-3.4.1-7.el8.aarch64
+DEBUG util.py:463:  gnutls-3.6.16-8.el8_9.3.aarch64
+DEBUG util.py:463:  zstd-1.4.4-1.el8.aarch64
+DEBUG util.py:463:  bzip2-1.0.6-26.el8.aarch64
+DEBUG util.py:463:  coreutils-common-8.30-15.el8.aarch64
+DEBUG util.py:463:  diffutils-3.6-6.el8.aarch64
+DEBUG util.py:463:  libatomic-8.5.0-22.el8_10.aarch64
+DEBUG util.py:463:  libgomp-8.5.0-22.el8_10.aarch64
+DEBUG util.py:463:  tcl-8.6.8-2.el8.aarch64
+DEBUG util.py:463:  libatomic_ops-7.6.2-3.el8.aarch64
+DEBUG util.py:463:  gc-7.6.4-3.el8.aarch64
+DEBUG util.py:463:  brotli-1.0.6-3.el8.aarch64
+DEBUG util.py:463:  cpio-2.12-11.el8.aarch64
+DEBUG util.py:463:  libedit-3.1-23.20170329cvs.el8.aarch64
+DEBUG util.py:463:  libnghttp2-1.33.0-6.el8_10.1.aarch64
+DEBUG util.py:463:  libpipeline-1.5.0-2.el8.aarch64
+DEBUG util.py:463:  libpkgconf-1.4.2-1.el8.aarch64
+DEBUG util.py:463:  pkgconf-1.4.2-1.el8.aarch64
+DEBUG util.py:463:  pkgconf-pkg-config-1.4.2-1.el8.aarch64
+DEBUG util.py:463:  glibc-devel-2.28-251.el8_10.2.aarch64
+DEBUG util.py:463:  libxcrypt-devel-4.1.1-6.el8.aarch64
+DEBUG util.py:463:  libsigsegv-2.11-5.el8.aarch64
+DEBUG util.py:463:  gawk-4.2.1-4.el8.aarch64
+DEBUG util.py:463:  libsmartcols-2.32.1-46.el8.aarch64
+DEBUG util.py:463:  libtool-ltdl-2.4.6-25.el8.aarch64
+DEBUG util.py:463:  libverto-0.3.2-2.el8.aarch64
+DEBUG util.py:463:  ncurses-6.1-10.20180224.el8.aarch64
+DEBUG util.py:463:  openssl-libs-1.1.1k-12.el8_9.aarch64
+DEBUG util.py:463:  coreutils-8.30-15.el8.aarch64
+DEBUG util.py:463:  ca-certificates-2023.2.60_v7.0.306-80.0.el8_8.noarch
+DEBUG util.py:463:  libdb-5.3.28-42.el8_4.aarch64
+DEBUG util.py:463:  krb5-libs-1.18.2-28.el8_10.aarch64
+DEBUG util.py:463:  libtirpc-1.1.4-12.el8_10.aarch64
+DEBUG util.py:463:  gzip-1.9-13.el8_5.aarch64
+DEBUG util.py:463:  cracklib-2.9.6-15.el8.aarch64
+DEBUG util.py:463:  libblkid-2.32.1-46.el8.aarch64
+DEBUG util.py:463:  libmount-2.32.1-46.el8.aarch64
+DEBUG util.py:463:  systemd-libs-239-82.el8_10.1.aarch64
+DEBUG util.py:463:  cracklib-dicts-2.9.6-15.el8.aarch64
+DEBUG util.py:463:  libnsl2-1.2.0-2.20180605git4a062cf.el8.aarch64
+DEBUG util.py:463:  libpwquality-1.4.4-6.el8.aarch64
+DEBUG util.py:463:  pam-1.3.1-34.el8_10.aarch64
+DEBUG util.py:463:  platform-python-setuptools-39.2.0-7.el8.noarch
+DEBUG util.py:463:  platform-python-3.6.8-62.el8_10.alma.1.aarch64
+DEBUG util.py:463:  python3-libs-3.6.8-62.el8_10.alma.1.aarch64
+DEBUG util.py:463:  binutils-2.30-123.el8.aarch64
+DEBUG util.py:463:  gcc-8.5.0-22.el8_10.aarch64
+DEBUG util.py:463:  shadow-utils-4.6-22.el8.aarch64
+DEBUG util.py:463:  libutempter-1.1.6-14.el8.aarch64
+DEBUG util.py:463:  tpm2-tss-2.3.2-6.el8.aarch64
+DEBUG util.py:463:  ima-evm-utils-1.3.2-12.el8.aarch64
+DEBUG util.py:463:  annobin-11.13-2.el8.aarch64
+DEBUG util.py:463:  gcc-plugin-annobin-8.5.0-22.el8_10.aarch64
+DEBUG util.py:463:  libusbx-1.0.23-4.el8.aarch64
+DEBUG util.py:463:  procps-ng-3.3.15-14.el8.aarch64
+DEBUG util.py:463:  glib2-2.56.4-162.el8.aarch64
+DEBUG util.py:463:  libbabeltrace-1.5.4-4.el8.aarch64
+DEBUG util.py:463:  libfdisk-2.32.1-46.el8.aarch64
+DEBUG util.py:463:  util-linux-2.32.1-46.el8.aarch64
+DEBUG util.py:463:  openssh-8.0p1-24.el8.aarch64
+DEBUG util.py:463:  openssh-clients-8.0p1-24.el8.aarch64
+DEBUG util.py:463:  man-db-2.7.6.1-18.el8.aarch64
+DEBUG util.py:463:  environment-modules-4.5.2-4.el8.aarch64
+DEBUG util.py:463:  cyrus-sasl-lib-2.1.27-6.el8_5.aarch64
+DEBUG util.py:463:  openldap-2.4.46-19.el8_10.aarch64
+DEBUG util.py:463:  libssh-0.9.6-14.el8.aarch64
+DEBUG util.py:463:  libcurl-7.61.1-34.el8.aarch64
+DEBUG util.py:463:  curl-7.61.1-34.el8.aarch64
+DEBUG util.py:463:  libdb-utils-5.3.28-42.el8_4.aarch64
+DEBUG util.py:463:  guile-2.0.14-7.el8.aarch64
+DEBUG util.py:463:  libarchive-3.3.3-5.el8.aarch64
+DEBUG util.py:463:  rpm-libs-4.14.3-31.el8.aarch64
+DEBUG util.py:463:  rpm-4.14.3-31.el8.aarch64
+DEBUG util.py:463:  efi-srpm-macros-3-3.el8.noarch
+DEBUG util.py:463:  gdb-headless-8.2-20.el8.aarch64
+DEBUG util.py:463:  npth-1.5-4.el8.aarch64
+DEBUG util.py:463:  gnupg2-2.2.20-3.el8_6.aarch64
+DEBUG util.py:463:  rpm-build-libs-4.14.3-31.el8.aarch64
+DEBUG util.py:463:  rust-srpm-macros-5-2.el8.noarch
+DEBUG util.py:463:  qt5-srpm-macros-5.15.3-1.el8.noarch
+DEBUG util.py:463:  perl-srpm-macros-1-25.el8.noarch
+DEBUG util.py:463:  openblas-srpm-macros-2-2.el8.noarch
+DEBUG util.py:463:  ocaml-srpm-macros-5-4.el8.noarch
+DEBUG util.py:463:  go-srpm-macros-2-17.el8.noarch
+DEBUG util.py:463:  ghc-srpm-macros-1.4.2-7.el8.noarch
+DEBUG util.py:463:  redhat-rpm-config-131-1.el8.alma.noarch
+DEBUG util.py:463:  rpm-build-4.14.3-31.el8.aarch64
+DEBUG util.py:463:  scl-utils-build-2.0.2-16.el8.aarch64
+DEBUG util.py:463:  scl-utils-2.0.2-16.el8.aarch64
+DEBUG util.py:463:  git-core-2.43.5-1.el8_10.aarch64
+DEBUG util.py:463:  gcc-c++-8.5.0-22.el8_10.aarch64
+DEBUG util.py:463:  which-2.21-20.el8.aarch64
+DEBUG util.py:463:  make-4.2.1-11.el8.aarch64
+DEBUG util.py:610:  Child return code was: 0
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/proc
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:558:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', '-o', 'rprivate,mode=0755', 'tmpfs', '/var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:610:  Child return code was: 0
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/proc
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:558:  Executing command: ['/bin/mount', '-n', '-o', 'rbind', '/proc', '/var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:610:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:558:  Executing command: ['/bin/mount', '-n', '-o', 'remount,nodev,noexec,nosuid,readonly,rprivate,rbind', '--target', '/var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:610:  Child return code was: 0
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/sys
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:558:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', '-o', 'rprivate,mode=0755', 'tmpfs', '/var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:610:  Child return code was: 0
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/sys
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:558:  Executing command: ['/bin/mount', '-n', '-o', 'rbind', '/sys', '/var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:610:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:558:  Executing command: ['/bin/mount', '-n', '-o', 'remount,nodev,noexec,nosuid,readonly,rprivate,rbind', '--target', '/var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:610:  Child return code was: 0
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/dev/shm
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:558:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', 'tmpfs', '/var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:610:  Child return code was: 0
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/dev/pts
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:558:  Executing command: ['/bin/mount', '-n', '-t', 'devpts', '-o', 'gid=5,mode=0620,ptmxmode=0666,newinstance', 'devpts', '/var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:610:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:558:  Executing command: ['/bin/mount', '-n', '-o', 'bind', '/tmp/mock-selinux-plugin.d2uwppi3', '/var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/proc/filesystems'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:610:  Child return code was: 0
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/sys/fs/selinux
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:558:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', 'tmpfs', '/var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/sys/fs/selinux'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:610:  Child return code was: 0
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/installation-homedir
+DEBUG package_manager.py:289:  ['/usr/bin/dnf-3', '--installroot', '/var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/', '-y', '--releasever', '8', '--setopt=deltarpm=False', '--allowerasing', '--nobest', '--setopt=install_weak_deps=False', '--disableplugin=local', '--disableplugin=spacewalk', '--disableplugin=versionlock', 'update']
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:558:  Executing command: ['/usr/bin/dnf-3', '--installroot', '/var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/', '-y', '--releasever', '8', '--setopt=deltarpm=False', '--allowerasing', '--nobest', '--setopt=install_weak_deps=False', '--disableplugin=local', '--disableplugin=spacewalk', '--disableplugin=versionlock', 'update', '--setopt=tsflags=nocontexts'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/installation-homedir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8', 'DFLTCC': '0', 'LC_MESSAGES': 'C.UTF-8'} and shell False
+DEBUG util.py:461:  No matches found for the following disable plugin patterns: local, spacewalk, versionlock
+DEBUG util.py:463:  Dependencies resolved.
+DEBUG util.py:463:  Nothing to do.
+DEBUG util.py:463:  Complete!
+DEBUG util.py:610:  Child return code was: 0
+DEBUG util.py:185:  kill orphans in chroot /var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:558:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/sys/fs/selinux'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:610:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:558:  Executing command: ['/bin/umount', '-n', '/var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/proc/filesystems'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:610:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:558:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:610:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:558:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:610:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:558:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:610:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:558:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:610:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:558:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:610:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:558:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:610:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:558:  Executing command: ['/bin/rpm', '-qa', '--root', '/var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:463:  libgcc-8.5.0-22.el8_10.aarch64
+DEBUG util.py:463:  crypto-policies-20230731-1.git3177e06.el8.noarch
+DEBUG util.py:463:  python-srpm-macros-3-45.el8.noarch
+DEBUG util.py:463:  python3-setuptools-wheel-39.2.0-7.el8.noarch
+DEBUG util.py:463:  python3-pip-wheel-9.0.3-24.el8.noarch
+DEBUG util.py:463:  python-rpm-macros-3-45.el8.noarch
+DEBUG util.py:463:  python3-rpm-macros-3-45.el8.noarch
+DEBUG util.py:463:  tzdata-2024a-1.el8.noarch
+DEBUG util.py:463:  publicsuffix-list-dafsa-20180723-1.el8.noarch
+DEBUG util.py:463:  pkgconf-m4-1.4.2-1.el8.noarch
+DEBUG util.py:463:  ncurses-base-6.1-10.20180224.el8.noarch
+DEBUG util.py:463:  libssh-config-0.9.6-14.el8.noarch
+DEBUG util.py:463:  kernel-headers-4.18.0-553.8.1.el8_10.aarch64
+DEBUG util.py:463:  almalinux-release-8.10-1.el8.aarch64
+DEBUG util.py:463:  setup-2.12.2-9.el8.noarch
+DEBUG util.py:463:  filesystem-3.8-6.el8.aarch64
+DEBUG util.py:463:  basesystem-11-5.el8.noarch
+DEBUG util.py:463:  pcre2-10.32-3.el8_6.aarch64
+DEBUG util.py:463:  libselinux-2.9-8.el8.aarch64
+DEBUG util.py:463:  glibc-all-langpacks-2.28-251.el8_10.2.aarch64
+DEBUG util.py:463:  ncurses-libs-6.1-10.20180224.el8.aarch64
+DEBUG util.py:463:  glibc-gconv-extra-2.28-251.el8_10.2.aarch64
+DEBUG util.py:463:  glibc-common-2.28-251.el8_10.2.aarch64
+DEBUG util.py:463:  glibc-2.28-251.el8_10.2.aarch64
+DEBUG util.py:463:  bash-4.4.20-5.el8.aarch64
+DEBUG util.py:463:  libsepol-2.9-3.el8.aarch64
+DEBUG util.py:463:  zlib-1.2.11-25.el8.aarch64
+DEBUG util.py:463:  info-6.5-7.el8.aarch64
+DEBUG util.py:463:  bzip2-libs-1.0.6-26.el8.aarch64
+DEBUG util.py:463:  xz-libs-5.2.4-4.el8_6.aarch64
+DEBUG util.py:463:  gmp-6.1.2-11.el8.aarch64
+DEBUG util.py:463:  libstdc++-8.5.0-22.el8_10.aarch64
+DEBUG util.py:463:  libxcrypt-4.1.1-6.el8.aarch64
+DEBUG util.py:463:  libzstd-1.4.4-1.el8.aarch64
+DEBUG util.py:463:  elfutils-libelf-0.190-2.el8.aarch64
+DEBUG util.py:463:  mpfr-3.1.6-1.el8.aarch64
+DEBUG util.py:463:  readline-7.0-10.el8.aarch64
+DEBUG util.py:463:  sqlite-libs-3.26.0-19.el8_9.aarch64
+DEBUG util.py:463:  libcap-2.48-6.el8_9.aarch64
+DEBUG util.py:463:  libcom_err-1.45.6-5.1.el8.alma.1.aarch64
+DEBUG util.py:463:  popt-1.18-1.el8.aarch64
+DEBUG util.py:463:  chkconfig-1.19.2-1.el8.aarch64
+DEBUG util.py:463:  libuuid-2.32.1-46.el8.aarch64
+DEBUG util.py:463:  libunistring-0.9.9-3.el8.aarch64
+DEBUG util.py:463:  libattr-2.4.48-3.el8.aarch64
+DEBUG util.py:463:  libacl-2.2.53-3.el8.aarch64
+DEBUG util.py:463:  sed-4.5-5.el8.aarch64
+DEBUG util.py:463:  libffi-3.1-24.el8.aarch64
+DEBUG util.py:463:  p11-kit-0.23.22-2.el8.aarch64
+DEBUG util.py:463:  libgpg-error-1.31-1.el8.aarch64
+DEBUG util.py:463:  lua-libs-5.3.4-12.el8.aarch64
+DEBUG util.py:463:  libidn2-2.2.0-1.el8.aarch64
+DEBUG util.py:463:  libmpc-1.1.0-9.1.el8.aarch64
+DEBUG util.py:463:  file-libs-5.33-26.el8.aarch64
+DEBUG util.py:463:  less-530-3.el8_10.aarch64
+DEBUG util.py:463:  expat-2.2.5-13.el8_10.aarch64
+DEBUG util.py:463:  gdbm-libs-1.18-2.el8.aarch64
+DEBUG util.py:463:  file-5.33-26.el8.aarch64
+DEBUG util.py:463:  libgcrypt-1.8.5-7.el8_6.aarch64
+DEBUG util.py:463:  libxml2-2.9.7-18.el8_10.1.aarch64
+DEBUG util.py:463:  unzip-6.0-46.el8.aarch64
+DEBUG util.py:463:  findutils-4.6.0-22.el8.aarch64
+DEBUG util.py:463:  elfutils-default-yama-scope-0.190-2.el8.noarch
+DEBUG util.py:463:  elfutils-libs-0.190-2.el8.aarch64
+DEBUG util.py:463:  glibc-headers-2.28-251.el8_10.2.aarch64
+DEBUG util.py:463:  keyutils-libs-1.5.10-9.el8.aarch64
+DEBUG util.py:463:  libcap-ng-0.7.11-1.el8.aarch64
+DEBUG util.py:463:  audit-libs-3.1.2-1.el8.aarch64
+DEBUG util.py:463:  libtasn1-4.13-4.el8_7.aarch64
+DEBUG util.py:463:  p11-kit-trust-0.23.22-2.el8.aarch64
+DEBUG util.py:463:  lz4-libs-1.8.3-3.el8_4.aarch64
+DEBUG util.py:463:  pcre-8.42-6.el8.aarch64
+DEBUG util.py:463:  grep-3.1-6.el8.aarch64
+DEBUG util.py:463:  xz-5.2.4-4.el8_6.aarch64
+DEBUG util.py:463:  libsemanage-2.9-9.el8_6.aarch64
+DEBUG util.py:463:  elfutils-0.190-2.el8.aarch64
+DEBUG util.py:463:  zip-3.0-23.el8.aarch64
+DEBUG util.py:463:  xml-common-0.6.3-50.el8.noarch
+DEBUG util.py:463:  iso-codes-3.79-2.el8.noarch
+DEBUG util.py:463:  gdbm-1.18-2.el8.aarch64
+DEBUG util.py:463:  cpp-8.5.0-22.el8_10.aarch64
+DEBUG util.py:463:  libpsl-0.20.2-6.el8.aarch64
+DEBUG util.py:463:  libassuan-2.5.1-3.el8.aarch64
+DEBUG util.py:463:  libksba-1.3.5-9.el8_7.aarch64
+DEBUG util.py:463:  groff-base-1.22.3-18.el8.aarch64
+DEBUG util.py:463:  tar-1.30-9.el8.aarch64
+DEBUG util.py:463:  patch-2.7.6-11.el8.aarch64
+DEBUG util.py:463:  dwz-0.12-10.el8.aarch64
+DEBUG util.py:463:  libstdc++-devel-8.5.0-22.el8_10.aarch64
+DEBUG util.py:463:  libasan-8.5.0-22.el8_10.aarch64
+DEBUG util.py:463:  libubsan-8.5.0-22.el8_10.aarch64
+DEBUG util.py:463:  isl-0.16.1-6.el8.aarch64
+DEBUG util.py:463:  nettle-3.4.1-7.el8.aarch64
+DEBUG util.py:463:  gnutls-3.6.16-8.el8_9.3.aarch64
+DEBUG util.py:463:  zstd-1.4.4-1.el8.aarch64
+DEBUG util.py:463:  bzip2-1.0.6-26.el8.aarch64
+DEBUG util.py:463:  coreutils-common-8.30-15.el8.aarch64
+DEBUG util.py:463:  diffutils-3.6-6.el8.aarch64
+DEBUG util.py:463:  libatomic-8.5.0-22.el8_10.aarch64
+DEBUG util.py:463:  libgomp-8.5.0-22.el8_10.aarch64
+DEBUG util.py:463:  tcl-8.6.8-2.el8.aarch64
+DEBUG util.py:463:  libatomic_ops-7.6.2-3.el8.aarch64
+DEBUG util.py:463:  gc-7.6.4-3.el8.aarch64
+DEBUG util.py:463:  brotli-1.0.6-3.el8.aarch64
+DEBUG util.py:463:  cpio-2.12-11.el8.aarch64
+DEBUG util.py:463:  libedit-3.1-23.20170329cvs.el8.aarch64
+DEBUG util.py:463:  libnghttp2-1.33.0-6.el8_10.1.aarch64
+DEBUG util.py:463:  libpipeline-1.5.0-2.el8.aarch64
+DEBUG util.py:463:  libpkgconf-1.4.2-1.el8.aarch64
+DEBUG util.py:463:  pkgconf-1.4.2-1.el8.aarch64
+DEBUG util.py:463:  pkgconf-pkg-config-1.4.2-1.el8.aarch64
+DEBUG util.py:463:  glibc-devel-2.28-251.el8_10.2.aarch64
+DEBUG util.py:463:  libxcrypt-devel-4.1.1-6.el8.aarch64
+DEBUG util.py:463:  libsigsegv-2.11-5.el8.aarch64
+DEBUG util.py:463:  gawk-4.2.1-4.el8.aarch64
+DEBUG util.py:463:  libsmartcols-2.32.1-46.el8.aarch64
+DEBUG util.py:463:  libtool-ltdl-2.4.6-25.el8.aarch64
+DEBUG util.py:463:  libverto-0.3.2-2.el8.aarch64
+DEBUG util.py:463:  ncurses-6.1-10.20180224.el8.aarch64
+DEBUG util.py:463:  openssl-libs-1.1.1k-12.el8_9.aarch64
+DEBUG util.py:463:  coreutils-8.30-15.el8.aarch64
+DEBUG util.py:463:  ca-certificates-2023.2.60_v7.0.306-80.0.el8_8.noarch
+DEBUG util.py:463:  libdb-5.3.28-42.el8_4.aarch64
+DEBUG util.py:463:  krb5-libs-1.18.2-28.el8_10.aarch64
+DEBUG util.py:463:  libtirpc-1.1.4-12.el8_10.aarch64
+DEBUG util.py:463:  gzip-1.9-13.el8_5.aarch64
+DEBUG util.py:463:  cracklib-2.9.6-15.el8.aarch64
+DEBUG util.py:463:  libblkid-2.32.1-46.el8.aarch64
+DEBUG util.py:463:  libmount-2.32.1-46.el8.aarch64
+DEBUG util.py:463:  systemd-libs-239-82.el8_10.1.aarch64
+DEBUG util.py:463:  cracklib-dicts-2.9.6-15.el8.aarch64
+DEBUG util.py:463:  libnsl2-1.2.0-2.20180605git4a062cf.el8.aarch64
+DEBUG util.py:463:  libpwquality-1.4.4-6.el8.aarch64
+DEBUG util.py:463:  pam-1.3.1-34.el8_10.aarch64
+DEBUG util.py:463:  platform-python-setuptools-39.2.0-7.el8.noarch
+DEBUG util.py:463:  platform-python-3.6.8-62.el8_10.alma.1.aarch64
+DEBUG util.py:463:  python3-libs-3.6.8-62.el8_10.alma.1.aarch64
+DEBUG util.py:463:  binutils-2.30-123.el8.aarch64
+DEBUG util.py:463:  gcc-8.5.0-22.el8_10.aarch64
+DEBUG util.py:463:  shadow-utils-4.6-22.el8.aarch64
+DEBUG util.py:463:  libutempter-1.1.6-14.el8.aarch64
+DEBUG util.py:463:  tpm2-tss-2.3.2-6.el8.aarch64
+DEBUG util.py:463:  ima-evm-utils-1.3.2-12.el8.aarch64
+DEBUG util.py:463:  annobin-11.13-2.el8.aarch64
+DEBUG util.py:463:  gcc-plugin-annobin-8.5.0-22.el8_10.aarch64
+DEBUG util.py:463:  libusbx-1.0.23-4.el8.aarch64
+DEBUG util.py:463:  procps-ng-3.3.15-14.el8.aarch64
+DEBUG util.py:463:  glib2-2.56.4-162.el8.aarch64
+DEBUG util.py:463:  libbabeltrace-1.5.4-4.el8.aarch64
+DEBUG util.py:463:  libfdisk-2.32.1-46.el8.aarch64
+DEBUG util.py:463:  util-linux-2.32.1-46.el8.aarch64
+DEBUG util.py:463:  openssh-8.0p1-24.el8.aarch64
+DEBUG util.py:463:  openssh-clients-8.0p1-24.el8.aarch64
+DEBUG util.py:463:  man-db-2.7.6.1-18.el8.aarch64
+DEBUG util.py:463:  environment-modules-4.5.2-4.el8.aarch64
+DEBUG util.py:463:  cyrus-sasl-lib-2.1.27-6.el8_5.aarch64
+DEBUG util.py:463:  openldap-2.4.46-19.el8_10.aarch64
+DEBUG util.py:463:  libssh-0.9.6-14.el8.aarch64
+DEBUG util.py:463:  libcurl-7.61.1-34.el8.aarch64
+DEBUG util.py:463:  curl-7.61.1-34.el8.aarch64
+DEBUG util.py:463:  libdb-utils-5.3.28-42.el8_4.aarch64
+DEBUG util.py:463:  guile-2.0.14-7.el8.aarch64
+DEBUG util.py:463:  libarchive-3.3.3-5.el8.aarch64
+DEBUG util.py:463:  rpm-libs-4.14.3-31.el8.aarch64
+DEBUG util.py:463:  rpm-4.14.3-31.el8.aarch64
+DEBUG util.py:463:  efi-srpm-macros-3-3.el8.noarch
+DEBUG util.py:463:  gdb-headless-8.2-20.el8.aarch64
+DEBUG util.py:463:  npth-1.5-4.el8.aarch64
+DEBUG util.py:463:  gnupg2-2.2.20-3.el8_6.aarch64
+DEBUG util.py:463:  rpm-build-libs-4.14.3-31.el8.aarch64
+DEBUG util.py:463:  rust-srpm-macros-5-2.el8.noarch
+DEBUG util.py:463:  qt5-srpm-macros-5.15.3-1.el8.noarch
+DEBUG util.py:463:  perl-srpm-macros-1-25.el8.noarch
+DEBUG util.py:463:  openblas-srpm-macros-2-2.el8.noarch
+DEBUG util.py:463:  ocaml-srpm-macros-5-4.el8.noarch
+DEBUG util.py:463:  go-srpm-macros-2-17.el8.noarch
+DEBUG util.py:463:  ghc-srpm-macros-1.4.2-7.el8.noarch
+DEBUG util.py:463:  redhat-rpm-config-131-1.el8.alma.noarch
+DEBUG util.py:463:  rpm-build-4.14.3-31.el8.aarch64
+DEBUG util.py:463:  scl-utils-build-2.0.2-16.el8.aarch64
+DEBUG util.py:463:  scl-utils-2.0.2-16.el8.aarch64
+DEBUG util.py:463:  git-core-2.43.5-1.el8_10.aarch64
+DEBUG util.py:463:  gcc-c++-8.5.0-22.el8_10.aarch64
+DEBUG util.py:463:  which-2.21-20.el8.aarch64
+DEBUG util.py:463:  make-4.2.1-11.el8.aarch64
+DEBUG util.py:610:  Child return code was: 0
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/builddir/build
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/builddir/build/RPMS
+DEBUG file_util.py:21:  created dir: /var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/builddir/build/RPMS
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/builddir/build/SPECS
+DEBUG file_util.py:21:  created dir: /var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/builddir/build/SPECS
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/builddir/build/SRPMS
+DEBUG file_util.py:21:  created dir: /var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/builddir/build/SRPMS
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/builddir/build/SOURCES
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/builddir/build/BUILD
+DEBUG file_util.py:21:  created dir: /var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/builddir/build/BUILD
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/builddir/build/BUILDROOT
+DEBUG file_util.py:21:  created dir: /var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/builddir/build/BUILDROOT
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/builddir/build/originals
+DEBUG file_util.py:21:  created dir: /var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/builddir/build/originals
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/builddir
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:558:  Executing command: ['userdel', '-f', 'mockbuild', '--prefix', '/var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:610:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:558:  Executing command: ['groupdel', 'mock', '--prefix', '/var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:610:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:558:  Executing command: ['groupadd', 'mock', '-g', '135', '--prefix', '/var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:610:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:558:  Executing command: ['useradd', 'mockbuild', '-o', '-u', '1000', '-g', '135', '-N', '-d', '/builddir', '--prefix', '/var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:461:  useradd: warning: the home directory /builddir already exists.
+DEBUG util.py:461:  useradd: Not copying any file from skel directory into it.
+DEBUG util.py:461:  Creating mailbox file: File exists
+DEBUG util.py:610:  Child return code was: 0
+DEBUG file_util.py:30:  touching file: /var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/.initialized
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:553:  Using nspawn with args ['--rlimit=RLIMIT_NOFILE=20480', '--capability=cap_ipc_lock', '--bind=/tmp/mock-resolv.55ntiti6:/etc/resolv.conf', '--bind=/dev/mapper/control', '--bind=/dev/fuse', '--bind=/dev/loop-control', '--bind=/dev/loop0', '--bind=/dev/loop1', '--bind=/dev/loop2', '--bind=/dev/loop3', '--bind=/dev/loop4', '--bind=/dev/loop5', '--bind=/dev/loop6', '--bind=/dev/loop7', '--bind=/dev/loop8', '--bind=/dev/loop9', '--bind=/dev/loop10', '--bind=/dev/loop11']
+DEBUG util.py:558:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '0870a09d746b46d4854f5c0d396246e4', '-D', '/var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root', '-a', '-u', 'mockbuild', '--rlimit=RLIMIT_NOFILE=20480', '--capability=cap_ipc_lock', '--bind=/tmp/mock-resolv.55ntiti6:/etc/resolv.conf', '--bind=/dev/mapper/control', '--bind=/dev/fuse', '--bind=/dev/loop-control', '--bind=/dev/loop0', '--bind=/dev/loop1', '--bind=/dev/loop2', '--bind=/dev/loop3', '--bind=/dev/loop4', '--bind=/dev/loop5', '--bind=/dev/loop6', '--bind=/dev/loop7', '--bind=/dev/loop8', '--bind=/dev/loop9', '--bind=/dev/loop10', '--bind=/dev/loop11', '--console=pipe', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=C.UTF-8', '--setenv=DFLTCC=0', '--resolv-conf=off', '/bin/rpm', '-Uvh', '--nodeps', '/builddir/build/originals/shim-unsigned-aarch64-15-6.el8.alma.1.src.rpm'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8', 'DFLTCC': '0', 'SYSTEMD_NSPAWN_TMPFS_TMP': '0', 'SYSTEMD_SECCOMP': '0'} and shell False
+DEBUG util.py:461:  warning: Found SQLITE rpmdb.sqlite database while attempting bdb backend: using sqlite backend.
+DEBUG util.py:463:  Updating / installing...
+DEBUG util.py:463:  shim-unsigned-aarch64-15-6.el8.alma.1 ########################################
+DEBUG util.py:610:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:553:  Using nspawn with args ['--rlimit=RLIMIT_NOFILE=20480', '--capability=cap_ipc_lock', '--bind=/tmp/mock-resolv.55ntiti6:/etc/resolv.conf', '--bind=/dev/mapper/control', '--bind=/dev/fuse', '--bind=/dev/loop-control', '--bind=/dev/loop0', '--bind=/dev/loop1', '--bind=/dev/loop2', '--bind=/dev/loop3', '--bind=/dev/loop4', '--bind=/dev/loop5', '--bind=/dev/loop6', '--bind=/dev/loop7', '--bind=/dev/loop8', '--bind=/dev/loop9', '--bind=/dev/loop10', '--bind=/dev/loop11']
+DEBUG util.py:558:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '28cbe6b237ed40169a875d3730a99108', '-D', '/var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root', '-a', '-u', 'mockbuild', '--rlimit=RLIMIT_NOFILE=20480', '--capability=cap_ipc_lock', '--bind=/tmp/mock-resolv.55ntiti6:/etc/resolv.conf', '--bind=/dev/mapper/control', '--bind=/dev/fuse', '--bind=/dev/loop-control', '--bind=/dev/loop0', '--bind=/dev/loop1', '--bind=/dev/loop2', '--bind=/dev/loop3', '--bind=/dev/loop4', '--bind=/dev/loop5', '--bind=/dev/loop6', '--bind=/dev/loop7', '--bind=/dev/loop8', '--bind=/dev/loop9', '--bind=/dev/loop10', '--bind=/dev/loop11', '--console=pipe', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=C.UTF-8', '--setenv=DFLTCC=0', '--resolv-conf=off', '/bin/rpm', '-qpl', '/builddir/build/originals/shim-unsigned-aarch64-15-6.el8.alma.1.src.rpm'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8', 'DFLTCC': '0', 'SYSTEMD_NSPAWN_TMPFS_TMP': '0', 'SYSTEMD_SECCOMP': '0'} and shell False
+DEBUG util.py:461:  warning: Found SQLITE rpmdb.sqlite database while attempting bdb backend: using sqlite backend.
+DEBUG util.py:463:  0001-Make-sure-that-MOK-variables-always-get-mirrored.patch
+DEBUG util.py:463:  0002-mok-fix-the-mirroring-of-RT-variables.patch
+DEBUG util.py:463:  0003-mok-consolidate-mirroring-code-in-a-helper-instead-o.patch
+DEBUG util.py:463:  0004-Make-VLogError-behave-as-expected.patch
+DEBUG util.py:463:  0005-Make-EFI-variable-copying-fatal-only-on-secureboot-e.patch
+DEBUG util.py:463:  0006-Make-some-things-dprint-instead-of-console_print.patch
+DEBUG util.py:463:  0007-shim-Properly-generate-absolute-paths-from-relative-.patch
+DEBUG util.py:463:  0008-shim-Prevent-shim-to-set-itself-as-a-second-stage-lo.patch
+DEBUG util.py:463:  0009-Fix-a-use-of-strlen-instead-of-Strlen.patch
+DEBUG util.py:463:  0010-translate_slashes-don-t-write-to-string-literals.patch
+DEBUG util.py:463:  0011-RHEL-9-disable-Wpointer-sign-for-now.patch
+DEBUG util.py:463:  almalinuxsecurebootca0.cer
+DEBUG util.py:463:  dbx.esl
+DEBUG util.py:463:  shim-15.tar.bz2
+DEBUG util.py:463:  shim-find-debuginfo.sh
+DEBUG util.py:463:  shim-unsigned-aarch64.spec
+DEBUG util.py:610:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/proc
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:558:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', '-o', 'rprivate,mode=0755', 'tmpfs', '/var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:610:  Child return code was: 0
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/proc
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:558:  Executing command: ['/bin/mount', '-n', '-o', 'rbind', '/proc', '/var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:610:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:558:  Executing command: ['/bin/mount', '-n', '-o', 'remount,nodev,noexec,nosuid,readonly,rprivate,rbind', '--target', '/var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:610:  Child return code was: 0
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/sys
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:558:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', '-o', 'rprivate,mode=0755', 'tmpfs', '/var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:610:  Child return code was: 0
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/sys
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:558:  Executing command: ['/bin/mount', '-n', '-o', 'rbind', '/sys', '/var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:610:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:558:  Executing command: ['/bin/mount', '-n', '-o', 'remount,nodev,noexec,nosuid,readonly,rprivate,rbind', '--target', '/var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:610:  Child return code was: 0
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/dev/shm
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:558:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', 'tmpfs', '/var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:610:  Child return code was: 0
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/dev/pts
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:558:  Executing command: ['/bin/mount', '-n', '-t', 'devpts', '-o', 'gid=5,mode=0620,ptmxmode=0666,newinstance', 'devpts', '/var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:610:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:558:  Executing command: ['/bin/mount', '-n', '-o', 'bind', '/tmp/mock-selinux-plugin.d2uwppi3', '/var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/proc/filesystems'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:610:  Child return code was: 0
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/sys/fs/selinux
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:558:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', 'tmpfs', '/var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/sys/fs/selinux'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:610:  Child return code was: 0
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/installation-homedir
+DEBUG package_manager.py:289:  ['/usr/bin/dnf-3', 'builddep', '--installroot', '/var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/', '--releasever', '8', '--setopt=deltarpm=False', '--allowerasing', '--nobest', '--setopt=install_weak_deps=False', '--disableplugin=local', '--disableplugin=spacewalk', '--disableplugin=versionlock', '/var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root//builddir/build/SRPMS/shim-unsigned-aarch64-15-6.el8.alma.1.src.rpm']
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:558:  Executing command: ['/usr/bin/dnf-3', 'builddep', '--installroot', '/var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/', '--releasever', '8', '--setopt=deltarpm=False', '--allowerasing', '--nobest', '--setopt=install_weak_deps=False', '--disableplugin=local', '--disableplugin=spacewalk', '--disableplugin=versionlock', '/var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root//builddir/build/SRPMS/shim-unsigned-aarch64-15-6.el8.alma.1.src.rpm', '--setopt=tsflags=nocontexts'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/installation-homedir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8', 'DFLTCC': '0', 'LC_MESSAGES': 'C.UTF-8'} and shell False
+DEBUG util.py:461:  No matches found for the following disable plugin patterns: local, spacewalk, versionlock
+DEBUG util.py:463:  Last metadata expiration check: 0:00:03 ago on Thu Jul 18 05:04:18 2024.
+DEBUG util.py:463:  Package gcc-8.5.0-22.el8_10.aarch64 is already installed.
+DEBUG util.py:463:  Package make-1:4.2.1-11.el8.aarch64 is already installed.
+DEBUG util.py:463:  Dependencies resolved.
+DEBUG util.py:463:  =========================================================================================================
+DEBUG util.py:463:   Package                   Arch     Version                                 Repository               Size
+DEBUG util.py:463:  =========================================================================================================
+DEBUG util.py:463:  Installing:
+DEBUG util.py:463:   elfutils-libelf-devel     aarch64  0.190-2.el8                             almalinux-8-baseos       61 k
+DEBUG util.py:463:   git                       aarch64  2.43.5-1.el8_10                         almalinux-8-appstream    91 k
+DEBUG util.py:463:   gnu-efi                   aarch64  1:3.0.8-4.el8                           almalinux-8-powertools   45 k
+DEBUG util.py:463:   gnu-efi-devel             aarch64  1:3.0.8-4.el8                           almalinux-8-powertools  102 k
+DEBUG util.py:463:   openssl                   aarch64  1:1.1.1k-12.el8_9                       almalinux-8-baseos      691 k
+DEBUG util.py:463:   openssl-devel             aarch64  1:1.1.1k-12.el8_9                       almalinux-8-baseos      2.3 M
+DEBUG util.py:463:   pesign                    aarch64  0.112-27.el8_7                          almalinux-8-appstream   171 k
+DEBUG util.py:463:  Installing dependencies:
+DEBUG util.py:463:   crypto-policies-scripts   noarch   20230731-1.git3177e06.el8               almalinux-8-baseos       83 k
+DEBUG util.py:463:   efivar-libs               aarch64  37-4.el8                                almalinux-8-baseos       99 k
+DEBUG util.py:463:   emacs-filesystem          noarch   1:26.1-11.el8                           almalinux-8-baseos       69 k
+DEBUG util.py:463:   git-core-doc              noarch   2.43.5-1.el8_10                         almalinux-8-appstream   3.1 M
+DEBUG util.py:463:   keyutils-libs-devel       aarch64  1.5.10-9.el8                            almalinux-8-baseos       47 k
+DEBUG util.py:463:   krb5-devel                aarch64  1.18.2-28.el8_10                        almalinux-8-baseos      560 k
+DEBUG util.py:463:   libcom_err-devel          aarch64  1.45.6-5.1.el8.alma.1                   almalinux-8-baseos       38 k
+DEBUG util.py:463:   libkadm5                  aarch64  1.18.2-28.el8_10                        almalinux-8-baseos      185 k
+DEBUG util.py:463:   libselinux-devel          aarch64  2.9-8.el8                               almalinux-8-baseos      199 k
+DEBUG util.py:463:   libsepol-devel            aarch64  2.9-3.el8                               almalinux-8-baseos       86 k
+DEBUG util.py:463:   libverto-devel            aarch64  0.3.2-2.el8                             almalinux-8-baseos       17 k
+DEBUG util.py:463:   libzstd-devel             aarch64  1.4.4-1.el8                             almalinux-8-baseos       43 k
+DEBUG util.py:463:   nspr                      aarch64  4.35.0-1.el8_8                          almalinux-8-appstream   135 k
+DEBUG util.py:463:   nss                       aarch64  3.90.0-7.el8_10                         almalinux-8-appstream   709 k
+DEBUG util.py:463:   nss-softokn               aarch64  3.90.0-7.el8_10                         almalinux-8-appstream   1.1 M
+DEBUG util.py:463:   nss-softokn-freebl        aarch64  3.90.0-7.el8_10                         almalinux-8-appstream   339 k
+DEBUG util.py:463:   nss-sysinit               aarch64  3.90.0-7.el8_10                         almalinux-8-appstream    74 k
+DEBUG util.py:463:   nss-tools                 aarch64  3.90.0-7.el8_10                         almalinux-8-appstream   582 k
+DEBUG util.py:463:   nss-util                  aarch64  3.90.0-7.el8_10                         almalinux-8-appstream   135 k
+DEBUG util.py:463:   pcre2-devel               aarch64  10.32-3.el8_6                           almalinux-8-baseos      604 k
+DEBUG util.py:463:   pcre2-utf16               aarch64  10.32-3.el8_6                           almalinux-8-baseos      202 k
+DEBUG util.py:463:   pcre2-utf32               aarch64  10.32-3.el8_6                           almalinux-8-baseos      195 k
+DEBUG util.py:463:   perl-Carp                 noarch   1.42-396.el8                            almalinux-8-baseos       30 k
+DEBUG util.py:463:   perl-Data-Dumper          aarch64  2.167-399.el8                           almalinux-8-baseos       56 k
+DEBUG util.py:463:   perl-Digest               noarch   1.17-395.el8                            almalinux-8-baseos       27 k
+DEBUG util.py:463:   perl-Digest-MD5           aarch64  2.55-396.el8                            almalinux-8-baseos       36 k
+DEBUG util.py:463:   perl-Encode               aarch64  4:2.97-3.el8                            almalinux-8-baseos      1.5 M
+DEBUG util.py:463:   perl-Errno                aarch64  1.28-422.el8.0.1                        almalinux-8-baseos       75 k
+DEBUG util.py:463:   perl-Error                noarch   1:0.17025-2.el8                         almalinux-8-appstream    46 k
+DEBUG util.py:463:   perl-Exporter             noarch   5.72-396.el8                            almalinux-8-baseos       34 k
+DEBUG util.py:463:   perl-File-Path            noarch   2.15-2.el8                              almalinux-8-baseos       38 k
+DEBUG util.py:463:   perl-File-Temp            noarch   0.230.600-1.el8                         almalinux-8-baseos       62 k
+DEBUG util.py:463:   perl-Getopt-Long          noarch   1:2.50-4.el8                            almalinux-8-baseos       63 k
+DEBUG util.py:463:   perl-Git                  noarch   2.43.5-1.el8_10                         almalinux-8-appstream    78 k
+DEBUG util.py:463:   perl-HTTP-Tiny            noarch   0.074-3.el8                             almalinux-8-baseos       58 k
+DEBUG util.py:463:   perl-IO                   aarch64  1.38-422.el8.0.1                        almalinux-8-baseos      141 k
+DEBUG util.py:463:   perl-IO-Socket-IP         noarch   0.39-5.el8                              almalinux-8-baseos       47 k
+DEBUG util.py:463:   perl-IO-Socket-SSL        noarch   2.066-4.module_el8.6.0+2811+fe6c84b0    almalinux-8-appstream   297 k
+DEBUG util.py:463:   perl-MIME-Base64          aarch64  3.15-396.el8                            almalinux-8-baseos       30 k
+DEBUG util.py:463:   perl-Mozilla-CA           noarch   20160104-7.module_el8.5.0+2812+ed912d05 almalinux-8-appstream    14 k
+DEBUG util.py:463:   perl-Net-SSLeay           aarch64  1.88-2.module_el8.6.0+2811+fe6c84b0     almalinux-8-appstream   372 k
+DEBUG util.py:463:   perl-PathTools            aarch64  3.74-1.el8                              almalinux-8-baseos       89 k
+DEBUG util.py:463:   perl-Pod-Escapes          noarch   1:1.07-395.el8                          almalinux-8-baseos       20 k
+DEBUG util.py:463:   perl-Pod-Perldoc          noarch   3.28-396.el8                            almalinux-8-baseos       86 k
+DEBUG util.py:463:   perl-Pod-Simple           noarch   1:3.35-395.el8                          almalinux-8-baseos      213 k
+DEBUG util.py:463:   perl-Pod-Usage            noarch   4:1.69-395.el8                          almalinux-8-baseos       34 k
+DEBUG util.py:463:   perl-Scalar-List-Utils    aarch64  3:1.49-2.el8                            almalinux-8-baseos       66 k
+DEBUG util.py:463:   perl-Socket               aarch64  4:2.027-3.el8                           almalinux-8-baseos       58 k
+DEBUG util.py:463:   perl-Storable             aarch64  1:3.11-3.el8                            almalinux-8-baseos       94 k
+DEBUG util.py:463:   perl-Term-ANSIColor       noarch   4.06-396.el8                            almalinux-8-baseos       46 k
+DEBUG util.py:463:   perl-Term-Cap             noarch   1.17-395.el8                            almalinux-8-baseos       23 k
+DEBUG util.py:463:   perl-TermReadKey          aarch64  2.37-7.el8                              almalinux-8-appstream    39 k
+DEBUG util.py:463:   perl-Text-ParseWords      noarch   3.30-395.el8                            almalinux-8-baseos       18 k
+DEBUG util.py:463:   perl-Text-Tabs+Wrap       noarch   2013.0523-395.el8                       almalinux-8-baseos       24 k
+DEBUG util.py:463:   perl-Time-Local           noarch   1:1.280-1.el8                           almalinux-8-baseos       33 k
+DEBUG util.py:463:   perl-URI                  noarch   1.73-3.el8                              almalinux-8-baseos      116 k
+DEBUG util.py:463:   perl-Unicode-Normalize    aarch64  1.25-396.el8                            almalinux-8-baseos       77 k
+DEBUG util.py:463:   perl-constant             noarch   1.33-396.el8                            almalinux-8-baseos       25 k
+DEBUG util.py:463:   perl-interpreter          aarch64  4:5.26.3-422.el8.0.1                    almalinux-8-baseos      6.3 M
+DEBUG util.py:463:   perl-libnet               noarch   3.11-3.el8                              almalinux-8-baseos      121 k
+DEBUG util.py:463:   perl-libs                 aarch64  4:5.26.3-422.el8.0.1                    almalinux-8-baseos      1.5 M
+DEBUG util.py:463:   perl-macros               aarch64  4:5.26.3-422.el8.0.1                    almalinux-8-baseos       71 k
+DEBUG util.py:463:   perl-parent               noarch   1:0.237-1.el8                           almalinux-8-baseos       20 k
+DEBUG util.py:463:   perl-podlators            noarch   4.11-1.el8                              almalinux-8-baseos      118 k
+DEBUG util.py:463:   perl-threads              aarch64  1:2.21-2.el8                            almalinux-8-baseos       59 k
+DEBUG util.py:463:   perl-threads-shared       aarch64  1.58-2.el8                              almalinux-8-baseos       46 k
+DEBUG util.py:463:   zlib-devel                aarch64  1.2.11-25.el8                           almalinux-8-baseos       57 k
+DEBUG util.py:463:  Enabling module streams:
+DEBUG util.py:463:   perl                               5.26                                                                 
+DEBUG util.py:463:   perl-IO-Socket-SSL                 2.066                                                                
+DEBUG util.py:463:   perl-libwww-perl                   6.34                                                                 
+DEBUG util.py:463:  Transaction Summary
+DEBUG util.py:463:  =========================================================================================================
+DEBUG util.py:463:  Install  74 Packages
+DEBUG util.py:463:  Total download size: 24 M
+DEBUG util.py:463:  Installed size: 73 M
+DEBUG util.py:463:  Downloading Packages:
+DEBUG util.py:463:  --------------------------------------------------------------------------------
+DEBUG util.py:463:  Total                                            12 MB/s |  24 MB     00:02     
+DEBUG util.py:463:  Running transaction check
+DEBUG util.py:463:  Transaction check succeeded.
+DEBUG util.py:463:  Running transaction test
+DEBUG util.py:463:  Transaction test succeeded.
+DEBUG util.py:463:  Running transaction
+DEBUG util.py:463:  Installed:
+DEBUG util.py:463:    crypto-policies-scripts-20230731-1.git3177e06.el8.noarch                      
+DEBUG util.py:463:    efivar-libs-37-4.el8.aarch64                                                  
+DEBUG util.py:463:    elfutils-libelf-devel-0.190-2.el8.aarch64                                     
+DEBUG util.py:463:    emacs-filesystem-1:26.1-11.el8.noarch                                         
+DEBUG util.py:463:    git-2.43.5-1.el8_10.aarch64                                                   
+DEBUG util.py:463:    git-core-doc-2.43.5-1.el8_10.noarch                                           
+DEBUG util.py:463:    gnu-efi-1:3.0.8-4.el8.aarch64                                                 
+DEBUG util.py:463:    gnu-efi-devel-1:3.0.8-4.el8.aarch64                                           
+DEBUG util.py:463:    keyutils-libs-devel-1.5.10-9.el8.aarch64                                      
+DEBUG util.py:463:    krb5-devel-1.18.2-28.el8_10.aarch64                                           
+DEBUG util.py:463:    libcom_err-devel-1.45.6-5.1.el8.alma.1.aarch64                                
+DEBUG util.py:463:    libkadm5-1.18.2-28.el8_10.aarch64                                             
+DEBUG util.py:463:    libselinux-devel-2.9-8.el8.aarch64                                            
+DEBUG util.py:463:    libsepol-devel-2.9-3.el8.aarch64                                              
+DEBUG util.py:463:    libverto-devel-0.3.2-2.el8.aarch64                                            
+DEBUG util.py:463:    libzstd-devel-1.4.4-1.el8.aarch64                                             
+DEBUG util.py:463:    nspr-4.35.0-1.el8_8.aarch64                                                   
+DEBUG util.py:463:    nss-3.90.0-7.el8_10.aarch64                                                   
+DEBUG util.py:463:    nss-softokn-3.90.0-7.el8_10.aarch64                                           
+DEBUG util.py:463:    nss-softokn-freebl-3.90.0-7.el8_10.aarch64                                    
+DEBUG util.py:463:    nss-sysinit-3.90.0-7.el8_10.aarch64                                           
+DEBUG util.py:463:    nss-tools-3.90.0-7.el8_10.aarch64                                             
+DEBUG util.py:463:    nss-util-3.90.0-7.el8_10.aarch64                                              
+DEBUG util.py:463:    openssl-1:1.1.1k-12.el8_9.aarch64                                             
+DEBUG util.py:463:    openssl-devel-1:1.1.1k-12.el8_9.aarch64                                       
+DEBUG util.py:463:    pcre2-devel-10.32-3.el8_6.aarch64                                             
+DEBUG util.py:463:    pcre2-utf16-10.32-3.el8_6.aarch64                                             
+DEBUG util.py:463:    pcre2-utf32-10.32-3.el8_6.aarch64                                             
+DEBUG util.py:463:    perl-Carp-1.42-396.el8.noarch                                                 
+DEBUG util.py:463:    perl-Data-Dumper-2.167-399.el8.aarch64                                        
+DEBUG util.py:463:    perl-Digest-1.17-395.el8.noarch                                               
+DEBUG util.py:463:    perl-Digest-MD5-2.55-396.el8.aarch64                                          
+DEBUG util.py:463:    perl-Encode-4:2.97-3.el8.aarch64                                              
+DEBUG util.py:463:    perl-Errno-1.28-422.el8.0.1.aarch64                                           
+DEBUG util.py:463:    perl-Error-1:0.17025-2.el8.noarch                                             
+DEBUG util.py:463:    perl-Exporter-5.72-396.el8.noarch                                             
+DEBUG util.py:463:    perl-File-Path-2.15-2.el8.noarch                                              
+DEBUG util.py:463:    perl-File-Temp-0.230.600-1.el8.noarch                                         
+DEBUG util.py:463:    perl-Getopt-Long-1:2.50-4.el8.noarch                                          
+DEBUG util.py:463:    perl-Git-2.43.5-1.el8_10.noarch                                               
+DEBUG util.py:463:    perl-HTTP-Tiny-0.074-3.el8.noarch                                             
+DEBUG util.py:463:    perl-IO-1.38-422.el8.0.1.aarch64                                              
+DEBUG util.py:463:    perl-IO-Socket-IP-0.39-5.el8.noarch                                           
+DEBUG util.py:463:    perl-IO-Socket-SSL-2.066-4.module_el8.6.0+2811+fe6c84b0.noarch                
+DEBUG util.py:463:    perl-MIME-Base64-3.15-396.el8.aarch64                                         
+DEBUG util.py:463:    perl-Mozilla-CA-20160104-7.module_el8.5.0+2812+ed912d05.noarch                
+DEBUG util.py:463:    perl-Net-SSLeay-1.88-2.module_el8.6.0+2811+fe6c84b0.aarch64                   
+DEBUG util.py:463:    perl-PathTools-3.74-1.el8.aarch64                                             
+DEBUG util.py:463:    perl-Pod-Escapes-1:1.07-395.el8.noarch                                        
+DEBUG util.py:463:    perl-Pod-Perldoc-3.28-396.el8.noarch                                          
+DEBUG util.py:463:    perl-Pod-Simple-1:3.35-395.el8.noarch                                         
+DEBUG util.py:463:    perl-Pod-Usage-4:1.69-395.el8.noarch                                          
+DEBUG util.py:463:    perl-Scalar-List-Utils-3:1.49-2.el8.aarch64                                   
+DEBUG util.py:463:    perl-Socket-4:2.027-3.el8.aarch64                                             
+DEBUG util.py:463:    perl-Storable-1:3.11-3.el8.aarch64                                            
+DEBUG util.py:463:    perl-Term-ANSIColor-4.06-396.el8.noarch                                       
+DEBUG util.py:463:    perl-Term-Cap-1.17-395.el8.noarch                                             
+DEBUG util.py:463:    perl-TermReadKey-2.37-7.el8.aarch64                                           
+DEBUG util.py:463:    perl-Text-ParseWords-3.30-395.el8.noarch                                      
+DEBUG util.py:463:    perl-Text-Tabs+Wrap-2013.0523-395.el8.noarch                                  
+DEBUG util.py:463:    perl-Time-Local-1:1.280-1.el8.noarch                                          
+DEBUG util.py:463:    perl-URI-1.73-3.el8.noarch                                                    
+DEBUG util.py:463:    perl-Unicode-Normalize-1.25-396.el8.aarch64                                   
+DEBUG util.py:463:    perl-constant-1.33-396.el8.noarch                                             
+DEBUG util.py:463:    perl-interpreter-4:5.26.3-422.el8.0.1.aarch64                                 
+DEBUG util.py:463:    perl-libnet-3.11-3.el8.noarch                                                 
+DEBUG util.py:463:    perl-libs-4:5.26.3-422.el8.0.1.aarch64                                        
+DEBUG util.py:463:    perl-macros-4:5.26.3-422.el8.0.1.aarch64                                      
+DEBUG util.py:463:    perl-parent-1:0.237-1.el8.noarch                                              
+DEBUG util.py:463:    perl-podlators-4.11-1.el8.noarch                                              
+DEBUG util.py:463:    perl-threads-1:2.21-2.el8.aarch64                                             
+DEBUG util.py:463:    perl-threads-shared-1.58-2.el8.aarch64                                        
+DEBUG util.py:463:    pesign-0.112-27.el8_7.aarch64                                                 
+DEBUG util.py:463:    zlib-devel-1.2.11-25.el8.aarch64                                              
+DEBUG util.py:463:  Complete!
+DEBUG util.py:610:  Child return code was: 0
+DEBUG util.py:185:  kill orphans in chroot /var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:558:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/sys/fs/selinux'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:610:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:558:  Executing command: ['/bin/umount', '-n', '/var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/proc/filesystems'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:610:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:558:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:610:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:558:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:610:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:558:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:610:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:558:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:610:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:558:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:610:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:558:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:610:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:558:  Executing command: rpm -qa --root '/var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root' --qf '%{nevra} %{buildtime} %{size} %{pkgid} installed\n' with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell True
+DEBUG util.py:463:  libgcc-8.5.0-22.el8_10.aarch64 1716399370 226448 e053ee4af404fbb2c7faee84310ca004 installed
+DEBUG util.py:463:  crypto-policies-20230731-1.git3177e06.el8.noarch 1697342317 73739 c383eb4e9bacfd944352d682e1718bc7 installed
+DEBUG util.py:463:  python-srpm-macros-3-45.el8.noarch 1684241739 6093 6974c7a99642cd08cb46a0809e517ac7 installed
+DEBUG util.py:463:  python3-setuptools-wheel-39.2.0-7.el8.noarch 1680287885 345266 9eaf181d6baf4409fd7515c5abcda68b installed
+DEBUG util.py:463:  python3-pip-wheel-9.0.3-24.el8.noarch 1712410870 897991 98b4eed4137d0f292b103c41713be7e1 installed
+DEBUG util.py:463:  python-rpm-macros-3-45.el8.noarch 1684241739 4325 39a036470a691cdee9fd7704d55ba30f installed
+DEBUG util.py:463:  python3-rpm-macros-3-45.el8.noarch 1684241739 3714 e21aee29c790c6f9d6816c2fcef3bcf3 installed
+DEBUG util.py:463:  tzdata-2024a-1.el8.noarch 1707425539 1780398 0d69f8e055d91404babb055fb2666984 installed
+DEBUG util.py:463:  publicsuffix-list-dafsa-20180723-1.el8.noarch 1573807861 64502 7270896e36c1ab14d6a0ee02d0a79b9b installed
+DEBUG util.py:463:  pkgconf-m4-1.4.2-1.el8.noarch 1570949719 14187 4cfa44df9ac23a6c716ac704552237b6 installed
+DEBUG util.py:463:  ncurses-base-6.1-10.20180224.el8.noarch 1697309544 290089 ce6326870742a02880bcce5d7021e0da installed
+DEBUG util.py:463:  libssh-config-0.9.6-14.el8.noarch 1711809592 277 1ba3e1231e4c5994b305354a6647dcf9 installed
+DEBUG util.py:463:  kernel-headers-4.18.0-553.8.1.el8_10.aarch64 1719916040 5535513 4472377b378a323c6fd11214929165ed installed
+DEBUG util.py:463:  almalinux-release-8.10-1.el8.aarch64 1716389385 38235 e26f80bca6e2848ce2fd7f92dddc24da installed
+DEBUG util.py:463:  setup-2.12.2-9.el8.noarch 1680380140 724747 ae44d5c7879734ba4b68b3cc6dbef32d installed
+DEBUG util.py:463:  filesystem-3.8-6.el8.aarch64 1633772619 0 b57a3dfd8577e304a27ffe2b08c185e8 installed
+DEBUG util.py:463:  basesystem-11-5.el8.noarch 1570798431 0 8071349d7effd7d19da1fafee0f1a8d8 installed
+DEBUG util.py:463:  pcre2-10.32-3.el8_6.aarch64 1659456776 701390 48115843fa7a93a26389b30956e469f0 installed
+DEBUG util.py:463:  libselinux-2.9-8.el8.aarch64 1680424977 206352 0e7bc526f7623c1a9cb99b7fe7a66cd5 installed
+DEBUG util.py:463:  glibc-all-langpacks-2.28-251.el8_10.2.aarch64 1716531544 436221928 36c04c44c4ac5a3358c2e107920866fc installed
+DEBUG util.py:463:  ncurses-libs-6.1-10.20180224.el8.aarch64 1697309516 1242384 ede4d68e03fc0d9102bdd2a1a121b0c7 installed
+DEBUG util.py:463:  glibc-gconv-extra-2.28-251.el8_10.2.aarch64 1716531544 19445342 cd03816393d31b63942dc08bca107967 installed
+DEBUG util.py:463:  glibc-common-2.28-251.el8_10.2.aarch64 1716531544 8308377 f8270bab111c53b0988dace86f106957 installed
+DEBUG util.py:463:  glibc-2.28-251.el8_10.2.aarch64 1716531544 6380080 84a5bc651e635a4c98d8bcbac7947ea4 installed
+DEBUG util.py:463:  bash-4.4.20-5.el8.aarch64 1716454698 6946292 8f3f24114815cfc1bca4ab32704ff9a3 installed
+DEBUG util.py:463:  libsepol-2.9-3.el8.aarch64 1633747702 769304 3958a05ab19a34d1581b82b7ab100f22 installed
+DEBUG util.py:463:  zlib-1.2.11-25.el8.aarch64 1697061742 236639 c64ecb4d27b9da82d6acba5a88aa2a4d installed
+DEBUG util.py:463:  info-6.5-7.el8.aarch64 1650302354 434938 12534efbafedb1783c833ff7a4b43900 installed
+DEBUG util.py:463:  bzip2-libs-1.0.6-26.el8.aarch64 1619307126 74765 a8b2c26b6f0e184e9a318f2f93edec5d installed
+DEBUG util.py:463:  xz-libs-5.2.4-4.el8_6.aarch64 1655212064 206287 cafe110feb19f09b43b37f34c9ab4ce7 installed
+DEBUG util.py:463:  gmp-1:6.1.2-11.el8.aarch64 1716472949 670884 6011268890a5057c40b2000ea46835d2 installed
+DEBUG util.py:463:  libstdc++-8.5.0-22.el8_10.aarch64 1716399370 1850692 ccb19662d37edfa73454eb4daf598837 installed
+DEBUG util.py:463:  libxcrypt-4.1.1-6.el8.aarch64 1633752818 185652 cc0942f56fbb9c44ac75180971f4d9ea installed
+DEBUG util.py:463:  libzstd-1.4.4-1.el8.aarch64 1619539397 619893 c9ee680ba9d806e2dc75d76f494eb07d installed
+DEBUG util.py:463:  elfutils-libelf-0.190-2.el8.aarch64 1712409261 1052562 943593408a154d2cfd40ae2c6f8a3df0 installed
+DEBUG util.py:463:  mpfr-3.1.6-1.el8.aarch64 1619382376 575025 44ce7e684c24b8587e59c41880b986a0 installed
+DEBUG util.py:463:  readline-7.0-10.el8.aarch64 1619726866 506889 a7e7b7340d08966a478d8f2514ec0169 installed
+DEBUG util.py:463:  sqlite-libs-3.26.0-19.el8_9.aarch64 1705393600 1162329 70be336a416bda49b9c543664a197e02 installed
+DEBUG util.py:463:  libcap-2.48-6.el8_9.aarch64 1704897273 514181 ebcc7364103df50a40b0b2b7868488d6 installed
+DEBUG util.py:463:  libcom_err-1.45.6-5.1.el8.alma.1.aarch64 1709131263 114505 c7095e189b72cdd3188c261c0a4aa7bd installed
+DEBUG util.py:463:  popt-1.18-1.el8.aarch64 1619384344 142786 0b142e96090adcf41559958321c6041a installed
+DEBUG util.py:463:  chkconfig-1.19.2-1.el8.aarch64 1697323076 884262 cd3f06325d49c1c8d91994cda81d6086 installed
+DEBUG util.py:463:  libuuid-2.32.1-46.el8.aarch64 1712407569 71816 fbb0dc88884f545f889b94ba792f187d installed
+DEBUG util.py:463:  libunistring-0.9.9-3.el8.aarch64 1619371729 1631132 6bf06126bca4354038d34e4cbbe6f185 installed
+DEBUG util.py:463:  libattr-2.4.48-3.el8.aarch64 1619306223 70474 9192d8b190712a4ca37eeaee1e7daaec installed
+DEBUG util.py:463:  libacl-2.2.53-3.el8.aarch64 1712404641 70480 24af490473e0d8ea6f57c4d6ae2bf8cb installed
+DEBUG util.py:463:  sed-4.5-5.el8.aarch64 1650319012 785318 8095bd7ed72c5f3685ab63981e4a9897 installed
+DEBUG util.py:463:  libffi-3.1-24.el8.aarch64 1680330135 86156 77af65f84fba4d0d8b0adfc3fd1d07ae installed
+DEBUG util.py:463:  p11-kit-0.23.22-2.el8.aarch64 1712411932 1777258 7b06f6b0bbc8cbcedd7d1dd45aecd26f installed
+DEBUG util.py:463:  libgpg-error-1.31-1.el8.aarch64 1619363880 930298 8736315aeb82a18043550d2e7b348b0b installed
+DEBUG util.py:463:  lua-libs-5.3.4-12.el8.aarch64 1633757289 272120 f63d5187a3b80dd0659a48df36305542 installed
+DEBUG util.py:463:  libidn2-2.2.0-1.el8.aarch64 1619365806 257658 a1561ab0869015167221810115fb86a7 installed
+DEBUG util.py:463:  libmpc-1.1.0-9.1.el8.aarch64 1619369869 151557 ad11b201ab9a4f1e41de62f7c05f8191 installed
+DEBUG util.py:463:  file-libs-5.33-26.el8.aarch64 1712411373 6427178 ec30a507e7a644636d8e87f622b08b59 installed
+DEBUG util.py:463:  less-530-3.el8_10.aarch64 1719950921 474618 49737eae6ee5b54b7599e4fa17e7f8ae installed
+DEBUG util.py:463:  expat-2.2.5-13.el8_10.aarch64 1716381581 306948 5feb7ac390e63fcbb22b5a49b2c6cb72 installed
+DEBUG util.py:463:  gdbm-libs-1:1.18-2.el8.aarch64 1665233185 175512 8e01e8df59ac1293c19c68c5824dba2e installed
+DEBUG util.py:463:  file-5.33-26.el8.aarch64 1712411373 137763 b2bc9d7682af5d94ab0f0284ebc13a37 installed
+DEBUG util.py:463:  libgcrypt-1.8.5-7.el8_6.aarch64 1656417661 901774 266c3843ab1dcf1801a661251716ac7b installed
+DEBUG util.py:463:  libxml2-2.9.7-18.el8_10.1.aarch64 1717597368 1842642 aab316173512089fe57cd78528a5c056 installed
+DEBUG util.py:463:  unzip-6.0-46.el8.aarch64 1650310548 485229 3d6a534dfd2cc70324c9934a183eb8af installed
+DEBUG util.py:463:  findutils-1:4.6.0-22.el8.aarch64 1712411658 1809428 7fa08f4e30ef6336809235dbb5dd5a40 installed
+DEBUG util.py:463:  elfutils-default-yama-scope-0.190-2.el8.noarch 1712410526 1810 e0b4cad7abd01e744917bfa08bf4ecd5 installed
+DEBUG util.py:463:  elfutils-libs-0.190-2.el8.aarch64 1712409261 767039 323ad70ad63623683224a6342efde734 installed
+DEBUG util.py:463:  glibc-headers-2.28-251.el8_10.2.aarch64 1716531544 1981998 61aa188c9c613011b406df3506ce2110 installed
+DEBUG util.py:463:  keyutils-libs-1.5.10-9.el8.aarch64 1633701265 96838 3ec6cd8c9d100d4558bcdf32c4effadc installed
+DEBUG util.py:463:  libcap-ng-0.7.11-1.el8.aarch64 1633741642 95870 b7a6c90359c97e73f428ba0df922eb49 installed
+DEBUG util.py:463:  audit-libs-3.1.2-1.el8.aarch64 1712406657 365482 8aef11fb8db79538ac7d3ab5c0aa30e5 installed
+DEBUG util.py:463:  libtasn1-4.13-4.el8_7.aarch64 1673574780 222461 de666b37bcadef14c96806ac4145bd15 installed
+DEBUG util.py:463:  p11-kit-trust-0.23.22-2.el8.aarch64 1712411932 544321 4e96b252dd58124c1e5e135650de1c33 installed
+DEBUG util.py:463:  lz4-libs-1.8.3-3.el8_4.aarch64 1625084771 137255 0c1e01476642820ad913abbc47926ded installed
+DEBUG util.py:463:  pcre-8.42-6.el8.aarch64 1633722083 566763 98f8d9c6d2908e5d47588d48f623fab8 installed
+DEBUG util.py:463:  grep-3.1-6.el8.aarch64 1619388219 841453 bdaefb904a94b591c8b645060e09d743 installed
+DEBUG util.py:463:  xz-5.2.4-4.el8_6.aarch64 1655212064 530282 f4378a35fce78ae8494092e0eb57e927 installed
+DEBUG util.py:463:  libsemanage-2.9-9.el8_6.aarch64 1666693913 308008 eec9e35754c4fcb676be69f5a8988487 installed
+DEBUG util.py:463:  elfutils-0.190-2.el8.aarch64 1712409261 3558798 45faa5a12cec3b0fea2ed64f019270bb installed
+DEBUG util.py:463:  zip-3.0-23.el8.aarch64 1619538371 989477 711a2e2fbf42f2f025f2040e427da767 installed
+DEBUG util.py:463:  xml-common-0.6.3-50.el8.noarch 1573807761 80250 c4764cbf176fd669842fed3d1a6aa22b installed
+DEBUG util.py:463:  iso-codes-3.79-2.el8.noarch 1570981311 18244318 96863d9bb86403474b1c3def4854745e installed
+DEBUG util.py:463:  gdbm-1:1.18-2.el8.aarch64 1665233185 515049 4bba97bebb6f51ceea90ea0e967b4f7e installed
+DEBUG util.py:463:  cpp-8.5.0-22.el8_10.aarch64 1716399370 24069918 8660e023f49482d1255b79498b00955c installed
+DEBUG util.py:463:  libpsl-0.20.2-6.el8.aarch64 1619363868 70220 7a5e6622e6bd929bd8fff2f992d7635d installed
+DEBUG util.py:463:  libassuan-2.5.1-3.el8.aarch64 1619369528 246811 de0e5ace8a6a6f46ee0e93511a2eec9c installed
+DEBUG util.py:463:  libksba-1.3.5-9.el8_7.aarch64 1675786350 366631 c033e7ab9064ffc597160bb152985c0a installed
+DEBUG util.py:463:  groff-base-1.22.3-18.el8.aarch64 1620269347 4312490 0d74c0f166fea8cd486b3410d94d37ed installed
+DEBUG util.py:463:  tar-2:1.30-9.el8.aarch64 1680638122 2900573 5ea394c6b400bf680c490ae50c39ba46 installed
+DEBUG util.py:463:  patch-2.7.6-11.el8.aarch64 1619380472 270473 861c7fc504cdaca06132e3c27006d1a1 installed
+DEBUG util.py:463:  dwz-0.12-10.el8.aarch64 1633750922 262679 7745fc109178dec55a49b4cb1955cf64 installed
+DEBUG util.py:463:  libstdc++-devel-8.5.0-22.el8_10.aarch64 1716399370 11560250 6573c8da41dac06216691360681936e5 installed
+DEBUG util.py:463:  libasan-8.5.0-22.el8_10.aarch64 1716399370 1478696 2b6588080bb58a14cb8a92beb3ac2697 installed
+DEBUG util.py:463:  libubsan-8.5.0-22.el8_10.aarch64 1716399370 352928 50854b7b46b3f7d4267e3dd9fcfcb898 installed
+DEBUG util.py:463:  isl-0.16.1-6.el8.aarch64 1619354541 3219817 fed5b7d41c0e9ab7c597dd6d02363241 installed
+DEBUG util.py:463:  nettle-3.4.1-7.el8.aarch64 1633731805 604145 45f9f508b02dbbceaf3d8c402026059f installed
+DEBUG util.py:463:  gnutls-3.6.16-8.el8_9.3.aarch64 1712866141 3018455 1a494b4fdbc4062a9092ea23556b01b6 installed
+DEBUG util.py:463:  zstd-1.4.4-1.el8.aarch64 1619539397 802839 b162b33fe55121687279dce035ecf886 installed
+DEBUG util.py:463:  bzip2-1.0.6-26.el8.aarch64 1619307126 176676 f676b1d22b5cd5102c6ca338bfbf4bee installed
+DEBUG util.py:463:  coreutils-common-8.30-15.el8.aarch64 1680337421 9896370 3b284ac0c38678b9d65e1535276e7c43 installed
+DEBUG util.py:463:  diffutils-3.6-6.el8.aarch64 1619338411 1451511 82ae2aea8419f2e239b0edf3296db289 installed
+DEBUG util.py:463:  libatomic-8.5.0-22.el8_10.aarch64 1716399370 70224 dfe2ac613f5f5b2a0059c27025cbed58 installed
+DEBUG util.py:463:  libgomp-8.5.0-22.el8_10.aarch64 1716399370 368487 da862127e80be6b798aa10e31caf87ed installed
+DEBUG util.py:463:  tcl-1:8.6.8-2.el8.aarch64 1619533273 4977822 b5490ffb3d6d430edf9af79f00f14ca6 installed
+DEBUG util.py:463:  libatomic_ops-7.6.2-3.el8.aarch64 1619369794 190422 0f6a8369cf9b63c5193bb0e1d3f66b7b installed
+DEBUG util.py:463:  gc-7.6.4-3.el8.aarch64 1619364672 345136 8e6fac17c33b51f2e9ead0d49e97e703 installed
+DEBUG util.py:463:  brotli-1.0.6-3.el8.aarch64 1619306804 1529132 96e266abf621043ae8a51a349c801192 installed
+DEBUG util.py:463:  cpio-2.12-11.el8.aarch64 1650304722 1012441 e0f426c9f30002daae30f08ef0ecbe27 installed
+DEBUG util.py:463:  libedit-3.1-23.20170329cvs.el8.aarch64 1619360125 284991 4df026fa60a6a1ec0cc2fba93db8e336 installed
+DEBUG util.py:463:  libnghttp2-1.33.0-6.el8_10.1.aarch64 1719950353 213060 4e2e5cafd039070b1ae12fb97a8bf897 installed
+DEBUG util.py:463:  libpipeline-1.5.0-2.el8.aarch64 1619363013 123041 fd0e2460d7caed8e0bcdbf4e74ae7ced installed
+DEBUG util.py:463:  libpkgconf-1.4.2-1.el8.aarch64 1620236738 71549 89542b55a08d044870989e25eef24d26 installed
+DEBUG util.py:463:  pkgconf-1.4.2-1.el8.aarch64 1620236738 94351 a00ab5ca56e168afa3de4093fcb45bd9 installed
+DEBUG util.py:463:  pkgconf-pkg-config-1.4.2-1.el8.aarch64 1620236738 3095 59a160fa83ee39c6307ab7d1925cfac1 installed
+DEBUG util.py:463:  glibc-devel-2.28-251.el8_10.2.aarch64 1716531544 208185 d7b7a51eacb079c2f2709a4f05ec18d5 installed
+DEBUG util.py:463:  libxcrypt-devel-4.1.1-6.el8.aarch64 1633752818 24771 fbeb621031412ea0605924829defbda0 installed
+DEBUG util.py:463:  libsigsegv-2.11-5.el8.aarch64 1619367175 98650 73d3fedb8643b64d33a6b479a6181e5f installed
+DEBUG util.py:463:  gawk-4.2.1-4.el8.aarch64 1650297963 3532726 4291ee2ec86f7d72d165fafe1430dab2 installed
+DEBUG util.py:463:  libsmartcols-2.32.1-46.el8.aarch64 1712407569 297426 4c82d8600afb525009b4555b2b9c294f installed
+DEBUG util.py:463:  libtool-ltdl-2.4.6-25.el8.aarch64 1619371262 96802 f67bd8dbef0daaa0bb57e485f3b0b7ac installed
+DEBUG util.py:463:  libverto-0.3.2-2.el8.aarch64 1665214883 71237 155265961757b72e33e3a967dab96b0b installed
+DEBUG util.py:463:  ncurses-6.1-10.20180224.el8.aarch64 1697309516 898828 13021d2f4b94477bde069f2871b94c04 installed
+DEBUG util.py:463:  openssl-libs-1:1.1.1k-12.el8_9.aarch64 1702890115 3660090 8f365b48acc4d6b91b24b4f227c6e7e8 installed
+DEBUG util.py:463:  coreutils-8.30-15.el8.aarch64 1680337421 9002584 ae95915d33412e11ef15693d85a33d4f installed
+DEBUG util.py:463:  ca-certificates-2023.2.60_v7.0.306-80.0.el8_8.noarch 1695296872 2332584 58c145dcaa5b6224eeb39411249363f8 installed
+DEBUG util.py:463:  libdb-5.3.28-42.el8_4.aarch64 1632243112 1759432 848a4e1cabe8c25cf3f3c9c93d52ad08 installed
+DEBUG util.py:463:  krb5-libs-1.18.2-28.el8_10.aarch64 1719950507 2464536 d7f6291a5825fa483ab3bbc4fb6ce4d5 installed
+DEBUG util.py:463:  libtirpc-1.1.4-12.el8_10.aarch64 1719952145 281846 9302f041b953028d97c6315851c8b2e2 installed
+DEBUG util.py:463:  gzip-1.9-13.el8_5.aarch64 1651039070 393562 6a132c4ef13bafa0e95b0b10c6fbc8bc installed
+DEBUG util.py:463:  cracklib-2.9.6-15.el8.aarch64 1619312464 434207 bd70f7acc0c989c0c4c6970508424c53 installed
+DEBUG util.py:463:  libblkid-2.32.1-46.el8.aarch64 1712407569 405256 012f95954c331ab58507065113971a9a installed
+DEBUG util.py:463:  libmount-2.32.1-46.el8.aarch64 1712407569 430898 5ac78f1dc13ea8061552899b2e1a0b52 installed
+DEBUG util.py:463:  systemd-libs-239-82.el8_10.1.aarch64 1719951555 4683486 e3535900b4b01714d7e08025abd2d754 installed
+DEBUG util.py:463:  cracklib-dicts-2.9.6-15.el8.aarch64 1619312464 9815016 5e792db175a96005709862e4f5a78c1d installed
+DEBUG util.py:463:  libnsl2-1.2.0-2.20180605git4a062cf.el8.aarch64 1619371434 163442 96d39bbc9e12e10ed1ef8db49a279e7f installed
+DEBUG util.py:463:  libpwquality-1.4.4-6.el8.aarch64 1680374583 612790 560ef74adc4d0dc30c935e2d5ef2eb84 installed
+DEBUG util.py:463:  pam-1.3.1-34.el8_10.aarch64 1719951533 5582359 027c33e32e69479f9d1e6cd7cdcf7bdf installed
+DEBUG util.py:463:  platform-python-setuptools-39.2.0-7.el8.noarch 1680287885 2923811 c9d2a8236f23065226b4f9c3f945744d installed
+DEBUG util.py:463:  platform-python-3.6.8-62.el8_10.alma.1.aarch64 1716484789 98566 e42ada31b189f226c58fec22caad07e5 installed
+DEBUG util.py:463:  python3-libs-3.6.8-62.el8_10.alma.1.aarch64 1716484789 34841487 4719101efee7ffac2addcdf079426920 installed
+DEBUG util.py:463:  binutils-2.30-123.el8.aarch64 1697050431 27523547 c36cae4f70ae01f3f3ba3736d2f7bd46 installed
+DEBUG util.py:463:  gcc-8.5.0-22.el8_10.aarch64 1716399370 49611136 c38792a49fb7de15209dfaea4ea8d0c4 installed
+DEBUG util.py:463:  shadow-utils-2:4.6-22.el8.aarch64 1712409759 4730964 e0ce8eb9bcf10753b98d0e3500357e69 installed
+DEBUG util.py:463:  libutempter-1.1.6-14.el8.aarch64 1619372446 165557 40de0251cc9b1b84ad32474e0440c606 installed
+DEBUG util.py:463:  tpm2-tss-2.3.2-6.el8.aarch64 1712405878 1470622 b46621c81efd0c7723ad7051c3c4d2cf installed
+DEBUG util.py:463:  ima-evm-utils-1.3.2-12.el8.aarch64 1619352332 186010 921f6077d611e72a80ea8b2f47e6c002 installed
+DEBUG util.py:463:  annobin-11.13-2.el8.aarch64 1697050692 1025148 a3ddc418be882388835435d9b399e047 installed
+DEBUG util.py:463:  gcc-plugin-annobin-8.5.0-22.el8_10.aarch64 1716399370 69656 25f10e140917a8878e9a5e4ba909a43a installed
+DEBUG util.py:463:  libusbx-1.0.23-4.el8.aarch64 1619372092 178579 5497f2429517e2c19a48056bfe1d413b installed
+DEBUG util.py:463:  procps-ng-3.3.15-14.el8.aarch64 1697315092 1718380 e5609d82b24707ac66e50811bea2473b installed
+DEBUG util.py:463:  glib2-2.56.4-162.el8.aarch64 1716473296 12819136 afb74e3c870fb5f6b1e68e60c3f97e52 installed
+DEBUG util.py:463:  libbabeltrace-1.5.4-4.el8.aarch64 1665399916 721371 a85dec9d107c976b8cda1777054e8da1 installed
+DEBUG util.py:463:  libfdisk-2.32.1-46.el8.aarch64 1712407569 438394 70c25e8a4c23a75a783c22be2bf18dba installed
+DEBUG util.py:463:  util-linux-2.32.1-46.el8.aarch64 1712407569 15189533 59d0e9960a7be27f434e5d164cc19eb1 installed
+DEBUG util.py:463:  openssh-8.0p1-24.el8.aarch64 1712349214 1987040 c968dda5e1e2163b53c985c55fcef7a2 installed
+DEBUG util.py:463:  openssh-clients-8.0p1-24.el8.aarch64 1712349214 2761739 ce80e2333d88518822a63d701692fb69 installed
+DEBUG util.py:463:  man-db-2.7.6.1-18.el8.aarch64 1633698999 2393912 dfbdfaa33ca38414cd303ff05c35522d installed
+DEBUG util.py:463:  environment-modules-4.5.2-4.el8.aarch64 1697309281 1976655 2f6892e5cbf307513278b6878b479f87 installed
+DEBUG util.py:463:  cyrus-sasl-lib-2.1.27-6.el8_5.aarch64 1645647556 929850 669fffb283723f0b7ffdb3139cd72cbe installed
+DEBUG util.py:463:  openldap-2.4.46-19.el8_10.aarch64 1719950555 1063043 0a3dbcf11cc3d86a2ee09b4cc6903946 installed
+DEBUG util.py:463:  libssh-0.9.6-14.el8.aarch64 1711809229 529807 cd81587521d0b17dfc7274fd6b01eb62 installed
+DEBUG util.py:463:  libcurl-7.61.1-34.el8.aarch64 1712406858 605544 722b7695888785e55e1c14b7981470b0 installed
+DEBUG util.py:463:  curl-7.61.1-34.el8.aarch64 1712406858 733597 d33e985f2d1407c9edfc7a9291f06dbc installed
+DEBUG util.py:463:  libdb-utils-5.3.28-42.el8_4.aarch64 1632243112 1077375 c5503f9ada1c315a0288db8948de23fc installed
+DEBUG util.py:463:  guile-5:2.0.14-7.el8.aarch64 1619393962 12113686 e9b8bc9a5632eca42a53b77b8f88d17e installed
+DEBUG util.py:463:  libarchive-3.3.3-5.el8.aarch64 1680285742 862599 ee7fb73a8b48dafb5547558d5bcb1388 installed
+DEBUG util.py:463:  rpm-libs-4.14.3-31.el8.aarch64 1712408091 755232 af2d072717aca86b4feab829bfffb788 installed
+DEBUG util.py:463:  rpm-4.14.3-31.el8.aarch64 1712408091 2348817 6c4edcd78a60cba79b6427830f69cf03 installed
+DEBUG util.py:463:  efi-srpm-macros-3-3.el8.noarch 1617878303 39226 28ae007d3e6cc616b2002aec551e715b installed
+DEBUG util.py:463:  gdb-headless-8.2-20.el8.aarch64 1697051266 9787376 85fec19f7e740076c0ab442590bff0a3 installed
+DEBUG util.py:463:  npth-1.5-4.el8.aarch64 1619381801 96357 5acd76442797e578f44bba67fffd3ece installed
+DEBUG util.py:463:  gnupg2-2.2.20-3.el8_6.aarch64 1663064620 10535203 13ea7ed274136c05f90ab2cdee6897ae installed
+DEBUG util.py:463:  rpm-build-libs-4.14.3-31.el8.aarch64 1712408091 273544 7dcf45a1ad10d6d21d2f8daca9f50087 installed
+DEBUG util.py:463:  rust-srpm-macros-5-2.el8.noarch 1571041961 1131 8cc87310ab4b0faba792cdffc7baad06 installed
+DEBUG util.py:463:  qt5-srpm-macros-5.15.3-1.el8.noarch 1665240446 0 13930856f05192204b4325eb0f3c905d installed
+DEBUG util.py:463:  perl-srpm-macros-1-25.el8.noarch 1570976318 794 87f30b6034fad6ec13927d649c2a4594 installed
+DEBUG util.py:463:  openblas-srpm-macros-2-2.el8.noarch 1571258850 104 d409c4addd2ba101a4d74ec42c7d04a0 installed
+DEBUG util.py:463:  ocaml-srpm-macros-5-4.el8.noarch 1571041863 737 9af56789b86c0471c4cbfda1e12c1382 installed
+DEBUG util.py:463:  go-srpm-macros-2-17.el8.noarch 1617893120 7342 f9e982a61afd93e325aea64d163ef5c3 installed
+DEBUG util.py:463:  ghc-srpm-macros-1.4.2-7.el8.noarch 1571008156 414 b31a25c1a96349c99c73d0531b290918 installed
+DEBUG util.py:463:  redhat-rpm-config-131-1.el8.alma.noarch 1680773284 157410 cb8a43cba75c1251f65d5def6070922c installed
+DEBUG util.py:463:  rpm-build-4.14.3-31.el8.aarch64 1712408091 575642 0733c32c8815602233d61fa59467e71a installed
+DEBUG util.py:463:  scl-utils-build-1:2.0.2-16.el8.aarch64 1680365419 19481 e0d4df1dc3dc8f665f252464c7368d68 installed
+DEBUG util.py:463:  scl-utils-1:2.0.2-16.el8.aarch64 1680365419 96192 4ca74c4875c15dbb978d631b64586622 installed
+DEBUG util.py:463:  git-core-2.43.5-1.el8_10.aarch64 1719322796 33434799 2e9623ac3a6a30dcbf662798552104de installed
+DEBUG util.py:463:  gcc-c++-8.5.0-22.el8_10.aarch64 1716399370 26519865 15e5c1f1f8fc4cd0173c57de058945e4 installed
+DEBUG util.py:463:  which-2.21-20.el8.aarch64 1697338243 124060 014cf798ec4c615d31d66e57ed66fd61 installed
+DEBUG util.py:463:  make-1:4.2.1-11.el8.aarch64 1650300381 1468608 c95917a13a1ff37d2011428968108d26 installed
+DEBUG util.py:463:  nspr-4.35.0-1.el8_8.aarch64 1695291214 431694 357e23e33abcb08a9c4efe5d0e85fb2d installed
+DEBUG util.py:463:  nss-util-3.90.0-7.el8_10.aarch64 1716428888 220804 d546375f03267e6c64a5c2283b50c3e5 installed
+DEBUG util.py:463:  zlib-devel-1.2.11-25.el8.aarch64 1697061742 141078 65ca934e655d65a014e54ddc7ec81f03 installed
+DEBUG util.py:463:  nss-softokn-freebl-3.90.0-7.el8_10.aarch64 1716428888 756080 3a138b9ebde8d4d3cc1858a6c8d1f303 installed
+DEBUG util.py:463:  nss-softokn-3.90.0-7.el8_10.aarch64 1716428888 3974296 ae3569db7a590884cc36f48993803fbf installed
+DEBUG util.py:463:  gnu-efi-1:3.0.8-4.el8.aarch64 1619375565 140264 f13f10127e9bc27bbd2a11c9e0d17bbf installed
+DEBUG util.py:463:  pcre2-utf32-10.32-3.el8_6.aarch64 1659456776 566758 7c916799e35a0a62e3da1b4f67d7d5d3 installed
+DEBUG util.py:463:  pcre2-utf16-10.32-3.el8_6.aarch64 1659456776 566790 cf6dead1c06e7a06e0ba6f48d1e68b69 installed
+DEBUG util.py:463:  pcre2-devel-10.32-3.el8_6.aarch64 1659456776 1922619 0019c2b30ca4478be7c4a6d9fd5645b3 installed
+DEBUG util.py:463:  openssl-1:1.1.1k-12.el8_9.aarch64 1702890115 1180952 2a0fcbeaf18974afe3a6711f2b94963d installed
+DEBUG util.py:463:  perl-Digest-1.17-395.el8.noarch 1570955296 26684 072565006d46d446394b93ecf0e54f10 installed
+DEBUG util.py:463:  perl-Digest-MD5-2.55-396.el8.aarch64 1619535364 105574 7fe2537ea6bf5ff32b5dc2230a639a5d installed
+DEBUG util.py:463:  perl-Data-Dumper-2.167-399.el8.aarch64 1619532728 134851 857a137b50f6c7a766fc6fef3bce798d installed
+DEBUG util.py:463:  perl-libnet-3.11-3.el8.noarch 1570999891 277134 4d8dd1b0a02e78141fbd3b7325f53c9f installed
+DEBUG util.py:463:  perl-URI-1.73-3.el8.noarch 1573658335 216452 7cfda8476b9d47b81efca515aa1a10aa installed
+DEBUG util.py:463:  perl-Time-Local-1:1.280-1.el8.noarch 1570972329 59906 6d642a23247175421e888aea70734752 installed
+DEBUG util.py:463:  perl-Mozilla-CA-20160104-7.module_el8.5.0+2812+ed912d05.noarch 1650649450 5714 375d0811943cf2e1613890608c5ff5d4 installed
+DEBUG util.py:463:  perl-Pod-Escapes-1:1.07-395.el8.noarch 1570967377 25763 187e3c2a3b8529d94a9a2da54fe0f681 installed
+DEBUG util.py:463:  perl-Net-SSLeay-1.88-2.module_el8.6.0+2811+fe6c84b0.aarch64 1650648514 1378415 0dfa060a20066b8239db71c0f9f8eeae installed
+DEBUG util.py:463:  perl-IO-Socket-IP-0.39-5.el8.noarch 1570961507 99525 2dc8a8bad7bed75fa888dcfa9c1d2bc3 installed
+DEBUG util.py:463:  perl-IO-Socket-SSL-2.066-4.module_el8.6.0+2811+fe6c84b0.noarch 1650651986 618704 e0497e147211fd2f278cbc32c0260c53 installed
+DEBUG util.py:463:  perl-Term-ANSIColor-4.06-396.el8.noarch 1570969691 89627 532e452e3f8b4d5bee4966eba48f4256 installed
+DEBUG util.py:463:  perl-File-Temp-0.230.600-1.el8.noarch 1570958419 164723 888f861191d72eea118083c7122a87d8 installed
+DEBUG util.py:463:  perl-Term-Cap-1.17-395.el8.noarch 1570969761 29850 d0afbeb40ac50e1b7b1b07c173cd1156 installed
+DEBUG util.py:463:  perl-Pod-Simple-1:3.35-395.el8.noarch 1570967776 543719 824775291c12f0068b569b3522ac72ce installed
+DEBUG util.py:463:  perl-HTTP-Tiny-0.074-3.el8.noarch 1712407881 149711 1dc0a60f64836c7853b336b9756ae028 installed
+DEBUG util.py:463:  perl-podlators-4.11-1.el8.noarch 1570975956 287639 064949a8a909ca135e7d688ace2c917e installed
+DEBUG util.py:463:  perl-Pod-Perldoc-3.28-396.el8.noarch 1570967638 169228 f625e81c2c106255c9923036d8275cb8 installed
+DEBUG util.py:463:  perl-Text-ParseWords-3.30-395.el8.noarch 1570971722 13101 346595595f637723eece1706e7291034 installed
+DEBUG util.py:463:  perl-Pod-Usage-4:1.69-395.el8.noarch 1570967839 49720 6889c91accc929463eabf16f712eccc3 installed
+DEBUG util.py:463:  perl-MIME-Base64-3.15-396.el8.aarch64 1619545131 94371 2d81f5b46b42fdc596f5b037eeaa229e installed
+DEBUG util.py:463:  perl-Storable-1:3.11-3.el8.aarch64 1619551665 246054 af8342b2c81ac3ef8d7f03653706f565 installed
+DEBUG util.py:463:  perl-Getopt-Long-1:2.50-4.el8.noarch 1570959003 139724 a3bbdda23ff50bd2a9747bd0a4a9be5e installed
+DEBUG util.py:463:  perl-Errno-0:1.28-422.el8.0.1.aarch64 1684445839 9511 4e6301e7aa2b920410018f160104cad5 installed
+DEBUG util.py:463:  perl-Socket-4:2.027-3.el8.aarch64 1619551242 144190 0d882b6f3ba2ac34cdd6f1f8fca02f84 installed
+DEBUG util.py:463:  perl-Encode-4:2.97-3.el8.aarch64 1619535865 10371207 f338445a1eef6dff5dd499f2d8886c1b installed
+DEBUG util.py:463:  perl-Carp-1.42-396.el8.noarch 1570950374 41850 821277a3553443f1cb2d171e5168f91d installed
+DEBUG util.py:463:  perl-Exporter-5.72-396.el8.noarch 1570956723 55718 70a86e64d90c4d05721fd1fe6d9762c8 installed
+DEBUG util.py:463:  perl-libs-4:5.26.3-422.el8.0.1.aarch64 1684445839 6005989 efae4c71422bbf89f54ed6cc7890fb88 installed
+DEBUG util.py:463:  perl-Scalar-List-Utils-3:1.49-2.el8.aarch64 1619551050 140680 63c7bebf3fdc68ab4fc48cc0d5e90163 installed
+DEBUG util.py:463:  perl-parent-1:0.237-1.el8.noarch 1570975781 9187 e99f03aab06d4a8cb770f972a1cd2dc1 installed
+DEBUG util.py:463:  perl-macros-4:5.26.3-422.el8.0.1.aarch64 1684445839 5184 f03090a0d26194a7299917c3a5108696 installed
+DEBUG util.py:463:  perl-constant-1.33-396.el8.noarch 1570974903 27103 c7dc59a84907d4102a38362fbdc49ac8 installed
+DEBUG util.py:463:  perl-PathTools-3.74-1.el8.aarch64 1619549118 231645 aa460b1875ca2626f563b1f98eb62564 installed
+DEBUG util.py:463:  perl-File-Path-2.15-2.el8.noarch 1570958008 64920 c954f28bf7c10427abf97f6211cc268e installed
+DEBUG util.py:463:  perl-IO-0:1.38-422.el8.0.1.aarch64 1684445839 188759 ff8c982945b27e5c633c1a181ef17b9a installed
+DEBUG util.py:463:  perl-Text-Tabs+Wrap-2013.0523-395.el8.noarch 1571071842 24825 24a88eb5e4c1babe855c1f00f95c0c40 installed
+DEBUG util.py:463:  perl-threads-shared-1.58-2.el8.aarch64 1619561188 106506 f376a3a0d275a1741daae6ac55d52ee9 installed
+DEBUG util.py:463:  perl-threads-1:2.21-2.el8.aarch64 1619561061 137491 ce288b9de71d8799dacaf1bac043bf12 installed
+DEBUG util.py:463:  perl-Unicode-Normalize-1.25-396.el8.aarch64 1619557416 696949 0c25a2f8a76f090a36e299b0bdefc148 installed
+DEBUG util.py:463:  perl-interpreter-4:5.26.3-422.el8.0.1.aarch64 1684445839 15429709 7308b5590a219d564991c4b899a6cc33 installed
+DEBUG util.py:463:  perl-Error-1:0.17025-2.el8.noarch 1571067041 71562 6e9a4530eb8f401d3d1f3556283d92c7 installed
+DEBUG util.py:463:  perl-TermReadKey-2.37-7.el8.aarch64 1619553695 110935 555e3a92475158503a385eed3e345457 installed
+DEBUG util.py:463:  libzstd-devel-1.4.4-1.el8.aarch64 1619539397 152846 015b35a29d5ab29e78e3afc11b456b4a installed
+DEBUG util.py:463:  libverto-devel-0.3.2-2.el8.aarch64 1665214883 26296 84ab1ea7d6fe117676ddefbf9552aa20 installed
+DEBUG util.py:463:  libsepol-devel-2.9-3.el8.aarch64 1633747702 129692 806dff13505bd5ced6603832ffe96bb5 installed
+DEBUG util.py:463:  libselinux-devel-2.9-8.el8.aarch64 1680424977 192379 5ea097a840046dabc3bcee385ffe743e installed
+DEBUG util.py:463:  libkadm5-1.18.2-28.el8_10.aarch64 1719950507 273144 025d98489cca64b72e2f5c6d2b77de5f installed
+DEBUG util.py:463:  libcom_err-devel-1.45.6-5.1.el8.alma.1.aarch64 1709131263 17058 fdab54bd0317dbc60af0c3cd24018da1 installed
+DEBUG util.py:463:  keyutils-libs-devel-1.5.10-9.el8.aarch64 1633701265 33454 40a904ba6daedacdf0933aeddb62e585 installed
+DEBUG util.py:463:  krb5-devel-1.18.2-28.el8_10.aarch64 1719950507 1433703 ca7e4bd2d68c83cf04443a7fc9603fc6 installed
+DEBUG util.py:463:  emacs-filesystem-1:26.1-11.el8.noarch 1697306672 0 15c4364711572f14720ee5b48822dffa installed
+DEBUG util.py:463:  efivar-libs-37-4.el8.aarch64 1620174485 313032 00a7eb45e40a8c6c55810721c3ea18eb installed
+DEBUG util.py:463:  crypto-policies-scripts-20230731-1.git3177e06.el8.noarch 1697342317 190780 15dd4c2cc87c8198739d9c7d2a980ff5 installed
+DEBUG util.py:463:  nss-3.90.0-7.el8_10.aarch64 1716428888 1964322 39568bf01bba7f04e7b597bc9bbeb64a installed
+DEBUG util.py:463:  nss-sysinit-3.90.0-7.el8_10.aarch64 1716428888 71865 d0b6f91bcbe37db9d24ab015dcea828e installed
+DEBUG util.py:463:  nss-tools-3.90.0-7.el8_10.aarch64 1716428888 3011864 311b8514c9b8ae78b4877f54d7d7edd0 installed
+DEBUG util.py:463:  git-core-doc-2.43.5-1.el8_10.noarch 1719323054 14698769 c0b95526de17edf8923f1618cf7d0961 installed
+DEBUG util.py:463:  perl-Git-2.43.5-1.el8_10.noarch 1719323054 66682 4771fc2e6f8a7124ec5fcae3f214e5f0 installed
+DEBUG util.py:463:  git-2.43.5-1.el8_10.aarch64 1719322796 87937 b7840e6e9883e74021dab9a2c71626a7 installed
+DEBUG util.py:463:  pesign-0.112-27.el8_7.aarch64 1680616034 1286216 af44d2dacfda6269b54b0dcef1d7c86e installed
+DEBUG util.py:463:  openssl-devel-1:1.1.1k-12.el8_9.aarch64 1702890115 3548460 e446de198c7cd405fc1e57499c9a4ebc installed
+DEBUG util.py:463:  elfutils-libelf-devel-0.190-2.el8.aarch64 1712409261 35225 e897049fa0db6f0011e089bfbf92ac39 installed
+DEBUG util.py:463:  gnu-efi-devel-1:3.0.8-4.el8.aarch64 1619375565 395268 aea814819853fdaf664db8d245bd25cd installed
+DEBUG util.py:610:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG backend.py:821:  Copying packages to result dir
+DEBUG util.py:185:  kill orphans in chroot /var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:558:  Executing command: ['/bin/umount', '-n', '/var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/var/cache/dnf'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:610:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:558:  Executing command: ['/bin/umount', '-n', '/var/lib/mock/a78e549cc022e442fdf63d579d83b85b456a58c36cd80dd57c4f4b88568a6f6c.0/root/var/cache/yum'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:610:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:558:  Executing command: ['btrfs', 'subv', 'list', '/var/lib/mock'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False

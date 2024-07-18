@@ -22,22 +22,22 @@ Here's the template:
 *******************************************************************************
 ### What organization or people are asking to have this signed?
 *******************************************************************************
-[your text here]
+AlmaLinux OS Foundation
 
 *******************************************************************************
 ### What product or service is this for?
 *******************************************************************************
-[your text here]
+AlmaLinux OS 8
 
 *******************************************************************************
 ### What's the justification that this really does need to be signed for the whole world to be able to boot it?
 *******************************************************************************
-[your text here]
+AlmaLinux OS is a popular RHEL compatible OS with more than 800.000 installations
 
 *******************************************************************************
 ### Why are you unable to reuse shim from another distro that is already signed?
 *******************************************************************************
-[your text here]
+We have our own separate certificates to distinguish from RHEL or Fedora
 
 *******************************************************************************
 ### Who is the primary contact for security updates, etc.?
@@ -46,10 +46,12 @@ The security contacts need to be verified before the shim can be accepted. For s
 An authorized reviewer will initiate contact verification by sending each security contact a PGP-encrypted email containing random words.
 You will be asked to post the contents of these mails in your `shim-review` issue to prove ownership of the email addresses and PGP keys.
 *******************************************************************************
-- Name:
-- Position:
-- Email address:
-- PGP key fingerprint:
+- Name: Andrew Lukoshko
+- Position: AlmaLinux OS Architect
+- Email address: alukoshko@almalinux.org
+- PGP key fingerprint: FB45 5AE4 AF07 A4E1 CC26 27A6 AFB1 408D CF15 F687
+- PGP key: https://keyserver.ubuntu.com/pks/lookup?op=vindex&search=0xafb1408dcf15f687
+(Key should be signed by the other security contacts, pushed to a keyserver like keyserver.ubuntu.com, and preferably have signatures that are reasonably well known in the Linux community.)
 
 (Key should be signed by the other security contacts, pushed to a keyserver
 like keyserver.ubuntu.com, and preferably have signatures that are reasonably
@@ -58,10 +60,11 @@ well known in the Linux community.)
 *******************************************************************************
 ### Who is the secondary contact for security updates, etc.?
 *******************************************************************************
-- Name:
-- Position:
-- Email address:
-- PGP key fingerprint:
+- Name: Jack Aboutboul
+- Position: AlmaLinux OS Foundation Board member and Community manager
+- Email address: jack@almalinux.org
+- PGP key fingerprint: 3A11 DD79 1E7D 605D 6841 B0BF D2F7 F268 6583 BD6E
+- PGP key: https://keyserver.ubuntu.com/pks/lookup?op=vindex&search=0xd2f7f2686583bd6e
 
 (Key should be signed by the other security contacts, pushed to a keyserver
 like keyserver.ubuntu.com, and preferably have signatures that are reasonably
@@ -86,7 +89,7 @@ Make sure that you've verified that your build process uses that file as a sourc
 
 A short guide on verifying public keys and signatures should be available in the [docs](./docs/) directory.
 *******************************************************************************
-[your text here]
+This is the unmodified shim-15.8 release.
 
 *******************************************************************************
 ### URL for a repo that contains the exact code which was built to result in your binary:
@@ -94,26 +97,28 @@ Hint: If you attach all the patches and modifications that are being used to you
 
 You can also point to your custom git servers, where the code is hosted.
 *******************************************************************************
-[your url here]
+https://github.com/rhboot/shim/tree/15.8
+Source rpm is: https://github.com/AlmaLinux/shim-review/blob/aarch64/shim-unsigned-aarch64-15.8-2.el8.alma.1.src.rpm
+Repositories which were used: http://repo.almalinux.org/almalinux/8.10/
 
 *******************************************************************************
 ### What patches are being applied and why:
 Mention all the external patches and build process modifications, which are used during your building process, that make your shim binary be the exact one that you posted as part of this application.
 *******************************************************************************
-[your text here]
+None.
 
 *******************************************************************************
 ### Do you have the NX bit set in your shim? If so, is your entire boot stack NX-compatible and what testing have you done to ensure such compatibility?
 
 See https://techcommunity.microsoft.com/t5/hardware-dev-center/nx-exception-for-shim-community/ba-p/3976522 for more details on the signing of shim without NX bit.
 *******************************************************************************
-[your text here]
+No
 
 *******************************************************************************
 ### What exact implementation of Secure Boot in GRUB2 do you have? (Either Upstream GRUB2 shim_lock verifier or Downstream RHEL/Fedora/Debian/Canonical-like implementation)
 Skip this, if you're not using GRUB2.
 *******************************************************************************
-[your text here]
+This is a "RHEL-like" implementation.
 
 *******************************************************************************
 ### Do you have fixes for all the following GRUB2 CVEs applied?
@@ -158,21 +163,23 @@ Skip this, if you're not using GRUB2.
   * CVE-2023-4693
   * CVE-2023-4692
 *******************************************************************************
-[your text here]
+Yes
 
 *******************************************************************************
 ### If shim is loading GRUB2 bootloader, and if these fixes have been applied, is the upstream global SBAT generation in your GRUB2 binary set to 4?
 Skip this, if you're not using GRUB2, otherwise do you have an entry in your GRUB2 binary similar to:  
 `grub,4,Free Software Foundation,grub,GRUB_UPSTREAM_VERSION,https://www.gnu.org/software/grub/`?
 *******************************************************************************
-[your text here]
+NTFS module affected by CVE-2023-4692 and CVE-2023-4693 is not included into signed GRUB2 binary.
+So GRUB2 SBAT generation is 3 but it's not vulnerable.
 
 *******************************************************************************
 ### Were old shims hashes provided to Microsoft for verification and to be added to future DBX updates?
 ### Does your new chain of trust disallow booting old GRUB2 builds affected by the CVEs?
 If you had no previous signed shim, say so here. Otherwise a simple _yes_ will do.
 *******************************************************************************
-[your text here]
+Old shims hashes are provided to Microsoft.
+Old GRUB2 builds are disallowed to boot because they have generation < 3 in SBAT.
 
 *******************************************************************************
 ### If your boot chain of trust includes a Linux kernel:
@@ -182,24 +189,29 @@ If you had no previous signed shim, say so here. Otherwise a simple _yes_ will d
 Hint: upstream kernels should have all these applied, but if you ship your own heavily-modified older kernel version, that is being maintained separately from upstream, this may not be the case.  
 If you are shipping an older kernel, double-check your sources; maybe you do not have all the patches, but ship a configuration, that does not expose the issue(s).
 *******************************************************************************
-[your text here]
+All mentioned upstream commits are applied.
 
 *******************************************************************************
 ### Do you build your signed kernel with additional local patches? What do they do?
 *******************************************************************************
-[your text here]
+No.
 
 *******************************************************************************
 ### Do you use an ephemeral key for signing kernel modules?
 ### If not, please describe how you ensure that one kernel build does not load modules built for another kernel.
 *******************************************************************************
-[your text here]
+Yes
 
 *******************************************************************************
 ### If you use vendor_db functionality of providing multiple certificates and/or hashes please briefly describe your certificate setup.
 ### If there are allow-listed hashes please provide exact binaries for which hashes are created via file sharing service, available in public with anonymous access for verification.
 *******************************************************************************
-[your text here]
+3 certificates enrolled in vendor_db:
+
+EV cert to sign shim MokManager, fallback binaries and fwupd (almalinux-sb-cert-1.der)
+EV cert to sign grub2 and kernel (almalinux-sb-cert-2.der)
+Self-signed cert to use after Jan 2025 (almalinux-sb-cert-3.der)
+No allow-listed hashes in vendor_db.
 
 *******************************************************************************
 ### If you are re-using the CA certificate from your last shim binary, you will need to add the hashes of the previous GRUB2 binaries exposed to the CVEs mentioned earlier to vendor_dbx in shim. Please describe your strategy.
@@ -207,7 +219,8 @@ This ensures that your new shim+GRUB2 can no longer chainload those older GRUB2 
 
 If this is your first application or you're using a new CA certificate, please say so here.
 *******************************************************************************
-[your text here]
+We don't use vendor_dbx in this build.
+Old GRUB2 builds are disallowed to boot because they have generation < 3 in SBAT.
 
 *******************************************************************************
 ### Is the Dockerfile in your repository the recipe for reproducing the building of your shim binary?
@@ -217,13 +230,14 @@ Hint: Prefer using *frozen* packages for your toolchain, since an update to GCC,
 
 If your shim binaries can't be reproduced using the provided Dockerfile, please explain why that's the case, what the differences would be and what build environment (OS and toolchain) is being used to reproduce this build? In this case please write a detailed guide, how to setup this build environment from scratch.
 *******************************************************************************
-[your text here]
+This is built on a AlmaLinux OS 8.10.
+The Dockerfile in this repository can be used to launch an identical buildroot.
 
 *******************************************************************************
 ### Which files in this repo are the logs for your build?
 This should include logs for creating the buildroots, applying patches, doing the build, creating the archives, etc.
 *******************************************************************************
-[your text here]
+root.log and build.log in this repo.
 
 *******************************************************************************
 ### What changes were made in the distro's secure boot chain since your SHIM was last signed?
@@ -231,24 +245,24 @@ For example, signing new kernel's variants, UKI, systemd-boot, new certs, new CA
 
 Skip this, if this is your first application for having shim signed.
 *******************************************************************************
-[your text here]
+Update shim from 15.6 to 15.8 and include new certificate.
 
 *******************************************************************************
 ### What is the SHA256 hash of your final shim binary?
 *******************************************************************************
-[your text here]
+1b3142f0c76df4942088fda2b2e4693d3d727893db2a7aaf5eb6fcefaec51b7a  shimaa64.efi
 
 *******************************************************************************
 ### How do you manage and protect the keys used in your shim?
 Describe the security strategy that is used for key protection. This can range from using hardware tokens like HSMs or Smartcards, air-gapped vaults, physical safes to other good practices.
 *******************************************************************************
-[your text here]
+They're stored in an FIPS 140-2 certified HSM tokens provided by Certification Authorities.
 
 *******************************************************************************
 ### Do you use EV certificates as embedded certificates in the shim?
 A _yes_ or _no_ will do. There's no penalty for the latter.
 *******************************************************************************
-[your text here]
+Two of included certs are EV, third is self-signed.
 
 *******************************************************************************
 ### Do you add a vendor-specific SBAT entry to the SBAT section in each binary that supports SBAT metadata ( GRUB2, fwupd, fwupdate, systemd-boot, systemd-stub, shim + all child shim binaries )?
@@ -261,7 +275,24 @@ If you are using a downstream implementation of GRUB2 (e.g. from Fedora or Debia
 
 Hint: run `objcopy --only-section .sbat -O binary YOUR_EFI_BINARY /dev/stdout` to get these entries. Paste them here. Preferably surround each listing with three backticks (\`\`\`), so they render well.
 *******************************************************************************
-[your text here]
+```
+shim:
+sbat,1,SBAT Version,sbat,1,https://github.com/rhboot/shim/blob/main/SBAT.md
+shim,4,UEFI shim,shim,1,https://github.com/rhboot/shim
+shim.almalinux,3,AlmaLinux,shim,15.8,security@almalinux.org
+
+grub2:
+sbat,1,SBAT Version,sbat,1,https://github.com/rhboot/shim/blob/main/SBAT.md
+grub,3,Free Software Foundation,grub,2.02,https//www.gnu.org/software/grub/
+grub.rh,2,Red Hat,grub2,2.02-156.el8,mailto:secalert@redhat.com
+grub.almalinux,2,AlmaLinux,grub2,2.02-156.el8.alma.1,mail:security@almalinux.org
+
+fwupd:
+sbat,1,UEFI shim,sbat,1,https://github.com/rhboot/shim/blob/main/SBAT.md
+fwupd-efi,1,Firmware update daemon,fwupd-efi,1.3,https://github.com/fwupd/fwupd-efi
+fwupd-efi.rhel,1,Red Hat Enterprise Linux,fwupd,1.7.8,mail:secalert@redhat.com
+fwupd-efi.almalinux,1,AlmaLinux,fwupd,1.7.8,mail:security@almalinux.org
+```
 
 *******************************************************************************
 ### If shim is loading GRUB2 bootloader, which modules are built into your signed GRUB2 image?
@@ -269,45 +300,54 @@ Skip this, if you're not using GRUB2.
 
 Hint: this is about those modules that are in the binary itself, not the `.mod` files in your filesystem.
 *******************************************************************************
-[your text here]
+all_video boot blscfg btrfs cat configfile cryptodisk echo ext2 fat font
+gcry_rijndael gcry_rsa gcry_serpent gcry_sha256 gcry_twofish gcry_whirlpool
+gfxmenu gfxterm gzio halt hfsplus http increment iso9660 jpeg loadenv loopback
+linux lvm luks mdraid09 mdraid1x minicmd net normal part_apple part_msdos
+part_gpt password_pbkdf2 png reboot regexp search search_fs_uuid search_fs_file
+search_label serial sleep syslinuxcfg test tftp video xfs efi_netfs efifwsetup
+efinet lsefi lsefimmap connectefi backtrace chain usb usbserial_common
+usbserial_pl2303 usbserial_ftdi usbserial_usbdebug keylayouts at_keyboard
 
 *******************************************************************************
 ### If you are using systemd-boot on arm64 or riscv, is the fix for [unverified Devicetree Blob loading](https://github.com/systemd/systemd/security/advisories/GHSA-6m6p-rjcq-334c) included?
 *******************************************************************************
-[your text here]
+Currently, we are not providing signed systemd-boot
 
 *******************************************************************************
 ### What is the origin and full version number of your bootloader (GRUB2 or systemd-boot or other)?
 *******************************************************************************
-[your text here]
+RHEL 8 downstream, 2.02-156.el8.alma.1
+https://vault.almalinux.org/8.10/BaseOS/Source/Packages/grub2-2.02-156.el8.alma.1.src.rpm
 
 *******************************************************************************
 ### If your shim launches any other components apart from your bootloader, please provide further details on what is launched.
 Hint: The most common case here will be a firmware updater like fwupd.
 *******************************************************************************
-[your text here]
+It also launches fwupd.
 
 *******************************************************************************
 ### If your GRUB2 or systemd-boot launches any other binaries that are not the Linux kernel in SecureBoot mode, please provide further details on what is launched and how it enforces Secureboot lockdown.
 Skip this, if you're not using GRUB2 or systemd-boot.
 *******************************************************************************
-[your text here]
+grub2 verifies signatures on booted kernels via shim.
+fwupd does not include code to launch other binaries, it can only load UEFI updates.
 
 *******************************************************************************
 ### How do the launched components prevent execution of unauthenticated code?
 Summarize in one or two sentences, how your secure bootchain works on higher level.
 *******************************************************************************
-[your text here]
+grub2 verifies signatures on booted kernels via shim.
+fwupd does not include code to launch other binaries, it can only load UEFI updates.
 
 *******************************************************************************
 ### Does your shim load any loaders that support loading unsigned kernels (e.g. certain GRUB2 configurations)?
 *******************************************************************************
-[your text here]
-
+No
 *******************************************************************************
 ### What kernel are you using? Which patches and configuration does it include to enforce Secure Boot?
 *******************************************************************************
-[your text here]
+It's RHEL8 kernel based on 4.18.0, plus a full compliment of patches for Secure Boot and relevant bug fixes.
 
 *******************************************************************************
 ### What contributions have you made to help us review the applications of other applicants?
@@ -322,4 +362,7 @@ For newcomers, the applications labeled as [*easy to review*](https://github.com
 *******************************************************************************
 ### Add any additional information you think we may need to validate this shim signing application.
 *******************************************************************************
-[your text here]
+Previous reviews:
+shim-15.5: rhboot#235
+shim-15.6: rhboot#250
+shim-15.8: rhboot#407
