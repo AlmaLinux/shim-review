@@ -1,0 +1,21 @@
+FROM --platform=linux/amd64 almalinux:9.6
+
+COPY rpmmacros /root/.rpmmacros
+COPY shim-unsigned-x64-16.1-1.el9.alma.1.src.rpm /
+RUN rpm -ivh shim-unsigned-x64-16.1-1.el9.alma.1.src.rpm
+RUN dnf install --releasever=9.6 -y dnf-plugins-core rpm-build almalinux-release-devel
+RUN dnf builddep -y --enablerepo=crb --enablerepo=devel --releasever=9.6 /builddir/build/SPECS/shim-unsigned-x64.spec
+RUN sed -i 's/linux32 -B/linux32/g' /builddir/build/SPECS/shim-unsigned-x64.spec
+RUN rpmbuild -bb /builddir/build/SPECS/shim-unsigned-x64.spec
+COPY shimx64.efi /
+RUN rpm2cpio /builddir/build/RPMS/x86_64/shim-unsigned-x64-16.1-1.el9.alma.1.x86_64.rpm | cpio -diu
+RUN ls -l /*.efi ./usr/share/shim/16.1-1.el9.alma.1/*/shim*.efi
+
+RUN hexdump -Cv ./usr/share/shim/16.1-1.el9.alma.1/x64/shimx64.efi > built-x64.hex
+RUN hexdump -Cv /shimx64.efi > orig-x64.hex
+RUN objdump -h /usr/share/shim/16.1-1.el9.alma.1/x64/shimx64.efi
+RUN diff -u orig-x64.hex built-x64.hex
+RUN pesign -h -P -i /usr/share/shim/16.1-1.el9.alma.1/x64/shimx64.efi
+RUN pesign -h -P -i /shimx64.efi
+
+RUN sha256sum /usr/share/shim/16.1-1.el9.alma.1/x64/shimx64.efi /shimx64.efi
