@@ -39,7 +39,7 @@ AlmaLinux OS 9
 *******************************************************************************
 ### What's the justification that this really does need to be signed for the whole world to be able to boot it?
 *******************************************************************************
-AlmaLinux OS is a popular RHEL compatible OS with more than 1.8M installations
+AlmaLinux OS is a popular RHEL compatible OS with more than 2.5M installations
 
 *******************************************************************************
 ### Why are you unable to reuse shim from another distro that is already signed?
@@ -117,10 +117,10 @@ Hint: If you attach all the patches and modifications that are being used to you
 You can also point to your custom git servers, where the code is hosted.
 *******************************************************************************
 Source rpms are:  
-https://github.com/AlmaLinux/shim-review/blob/shim-16.1/shim-unsigned-x64-16.1-1.el9.alma.1.src.rpm  
-https://github.com/AlmaLinux/shim-review/blob/shim-16.1/shim-unsigned-aarch64-16.1-2.el9.alma.1.src.rpm
+https://github.com/AlmaLinux/shim-review/blob/shim-16.1/shim-unsigned-x64-16.1-1.el9.alma.2.src.rpm
+https://github.com/AlmaLinux/shim-review/blob/shim-16.1/shim-unsigned-aarch64-16.1-2.el9.alma.2.src.rpm
 
-Repositories which were used to build: http://repo.almalinux.org/almalinux/9.6/
+Repositories which were used to build: http://repo.almalinux.org/almalinux/9.8/
 
 *******************************************************************************
 ### What patches are being applied and why:
@@ -133,7 +133,7 @@ None
 
 See https://techcommunity.microsoft.com/t5/hardware-dev-center/nx-exception-for-shim-community/ba-p/3976522 for more details on the signing of shim without NX bit.
 *******************************************************************************
-No
+It is set in this build.
 
 *******************************************************************************
 ### What exact implementation of Secure Boot in GRUB2 do you have? (Either Upstream GRUB2 shim_lock verifier or Downstream RHEL/Fedora/Debian/Canonical-like implementation)
@@ -183,18 +183,39 @@ This is a "RHEL-like" implementation
   * Details: https://lists.gnu.org/archive/html/grub-devel/2023-10/msg00028.html, SBAT increase to 4
   * CVE-2023-4693
   * CVE-2023-4692
+* February 2025
+  * Details: https://lists.gnu.org/archive/html/grub-devel/2025-02/msg00024.html, SBAT increase to 5
+  * CVE-2024-45774
+  * CVE-2024-45775
+  * CVE-2024-45776
+  * CVE-2024-45777
+  * CVE-2024-45778
+  * CVE-2024-45779
+  * CVE-2024-45780
+  * CVE-2024-45781
+  * CVE-2024-45782
+  * CVE-2024-45783
+  * CVE-2025-0622
+  * CVE-2025-0624
+  * CVE-2025-0677
+  * CVE-2025-0678
+  * CVE-2025-0684
+  * CVE-2025-0685
+  * CVE-2025-0686
+  * CVE-2025-0689
+  * CVE-2025-0690
+  * CVE-2025-1118
+  * CVE-2025-1125
 *******************************************************************************
 Yes
 
 *******************************************************************************
-### If shim is loading GRUB2 bootloader, and if these fixes have been applied, is the upstream global SBAT generation in your GRUB2 binary set to 4?
+### If shim is loading GRUB2 bootloader, and if these fixes have been applied, is the upstream global SBAT generation in your GRUB2 binary set to 5?
 Skip this, if you're not using GRUB2, otherwise do you have an entry in your GRUB2 binary similar to:  
-`grub,4,Free Software Foundation,grub,GRUB_UPSTREAM_VERSION,https://www.gnu.org/software/grub/`?
+`grub,5,Free Software Foundation,grub,GRUB_UPSTREAM_VERSION,https://www.gnu.org/software/grub/`?
 *******************************************************************************
 
-It is grub,3 in the latest public released AlmaLinux 9 GRUB2 errata version 2.06-104, this version however addresses all SecureBoot CVE fixes up to SBAT level 5.
-
-In the upcoming AlmaLinux 9.7 release GRUB2 will be updated to the newer package version with .sbat metadata 'grub,5'.
+Yes
 
 *******************************************************************************
 ### Were old shims hashes provided to Microsoft for verification and to be added to future DBX updates?
@@ -233,7 +254,8 @@ The configuration setting `CONFIG_EFI_CUSTOM_SSDT_OVERLAYS` is enabled, but sinc
 *******************************************************************************
 ### Do you build your signed kernel with additional local patches? What do they do?
 *******************************************************************************
-No, we're following RHEL kernel.
+We're following RHEL kernel with minor patches added to re-enable PCI IDs for legacy storage and network devices, also AlmaLinux OS 9.8 contains the following upstream fix:
+https://github.com/torvalds/linux/commit/d919a1e79bac890421537cf02ae773007bf55e6b
 
 *******************************************************************************
 ### Do you use an ephemeral key for signing kernel modules?
@@ -260,7 +282,7 @@ This ensures that your new shim+GRUB2 can no longer chainload those older GRUB2 
 If this is your first application or you're using a new CA certificate, please say so here.
 *******************************************************************************
 We don't use vendor_dbx in this build.
-Old GRUB2 builds are disallowed to boot because they have generation < 3 in SBAT.
+Old GRUB2 builds are disallowed to boot because they have generation < 5 in SBAT.
 
 *******************************************************************************
 ### Is the Dockerfile in your repository the recipe for reproducing the building of your shim binary?
@@ -270,7 +292,7 @@ Hint: Prefer using *frozen* packages for your toolchain, since an update to GCC,
 
 If your shim binaries can't be reproduced using the provided Dockerfile, please explain why that's the case, what the differences would be and what build environment (OS and toolchain) is being used to reproduce this build? In this case please write a detailed guide, how to setup this build environment from scratch.
 *******************************************************************************
-This is built on a AlmaLinux OS 9.6.
+This is built on a AlmaLinux OS 9.8.
 `Dockerfile.x86_64` and `Dockerfile.aarch64` in this repository can be used to launch an identical buildroot.
 ```
 docker build . -f Dockerfile.x86_64 --progress plain
@@ -295,8 +317,8 @@ Update shim from 15.8 to 16.1
 ### What is the SHA256 hash of your final shim binary?
 *******************************************************************************
 ```
-e3ad85531d00f99770ce541dfceb47ba0a2a82b3da0b14fff573ba823987f34c  shimaa64.efi
-d3719c40f006a6b4521f3d56506fa7eeb8043809a5d74b2e85749094fafcf730  shimx64.efi
+06179f39af04c7f1a54f803ae48109dba514d2311e103daf69e7076a5cbb6fff  shimaa64.efi
+6a04eb942c19fe6ecb36f944f8604bfdc72cb8151f0353449a0fd05e5d40e24b  shimx64.efi
 ```
 
 *******************************************************************************
@@ -329,7 +351,7 @@ If you are using a downstream implementation of GRUB2 (e.g. from Fedora or Debia
 
 **Remember to post the entries of all the binaries. Apart from your bootloader, you may also be shipping e.g. a firmware updater, which will also have these.**
 
-Hint: run `objcopy --only-section .sbat -O binary YOUR_EFI_BINARY /dev/stdout` to get these entries. Paste them here. Preferably surround each listing with three backticks (\`\`\`), so they render well.
+Hint: run `objcopy --dump-section .sbat=/dev/stdout YOUR_EFI_BINARY` to get these entries. Paste them here. Preferably surround each listing with three backticks (\`\`\`), so they render well.
 *******************************************************************************
 ```
 shim:
@@ -339,27 +361,24 @@ shim.almalinux,3,AlmaLinux,shim,16.1,security@almalinux.org
 
 grub2:
 sbat,1,SBAT Version,sbat,1,https://github.com/rhboot/shim/blob/main/SBAT.md
-grub,3,Free Software Foundation,grub,2.06,https//www.gnu.org/software/grub/
-grub.rh,2,Red Hat,grub2,2.06-104.el9_6,mailto:secalert@redhat.com
-grub.almalinux,2,AlmaLinux,grub2,2.06-104.el9_6.alma.1,mailto:security@almalinux.org
-
-fwupd:
-sbat,1,UEFI shim,sbat,1,https://github.com/rhboot/shim/blob/main/SBAT.md
-fwupd-efi,1,Firmware update daemon,fwupd-efi,1.4,https://github.com/fwupd/fwupd-efi
-fwupd-efi.rhel,1,Red Hat Enterprise Linux,fwupd,1.9.26,mail:secalert@redhat.com
-fwupd-efi.almalinux,1,AlmaLinux,fwupd,1.9.26,mail:security@almalinux.org
+grub,5,Free Software Foundation,grub,2.06,https//www.gnu.org/software/grub/
+grub.rh,2,Red Hat,grub2,2.06-126.el9_8,mailto:secalert@redhat.com
+grub.centos,2,Red Hat,grub2,2.06-126.el9_8,mailto:secalert@redhat.com
+grub.almalinux,2,AlmaLinux,grub2,2.06-126.el9_8.alma.1,mailto:security@almalinux.org
 
 kernel-uki-virt:
 sbat,1,SBAT Version,sbat,1,https://github.com/rhboot/shim/blob/main/SBAT.md
-linux,1,Red Hat,linux,5.14.0-570.55.1.el9_6.x86_64,mailto:secalert@redhat.com
-linux,1,AlmaLinux,linux,5.14.0-570.55.1.el9_6.x86_64,mailto:security@almalinux.org
-linux.rhel,1,Red Hat,linux,5.14.0-570.55.1.el9_6.x86_64,mailto:secalert@redhat.com
-linux.almalinux,1,AlmaLinux,linux,5.14.0-570.55.1.el9_6.x86_64,mailto:security@almalinux.org
-kernel-uki-virt.rhel,1,Red Hat,kernel-uki-virt,5.14.0-570.55.1.el9_6.x86_64,mailto:secalert@redhat.com
-kernel-uki-virt.almalinux,1,AlmaLinux,kernel-uki-virt,5.14.0-570.55.1.el9_6.x86_64,mailto:security@almalinux.org
+linux,1,Red Hat,linux,5.14.0-687.5.3.el9_8.x86_64,mailto:secalert@redhat.com
+linux,1,AlmaLinux,linux,5.14.0-687.5.3.el9_8.x86_64,mailto:security@almalinux.org
+linux.rhel,1,Red Hat,linux,5.14.0-687.5.3.el9_8.x86_64,mailto:secalert@redhat.com
+linux.almalinux,1,AlmaLinux,linux,5.14.0-687.5.3.el9_8.x86_64,mailto:security@almalinux.org
+kernel-uki-virt.rhel,1,Red Hat,kernel-uki-virt,5.14.0-687.5.3.el9_8.x86_64,mailto:secalert@redhat.com
+kernel-uki-virt.almalinux,1,AlmaLinux,kernel-uki-virt,5.14.0-687.5.3.el9_8.x86_64,mailto:security@almalinux.org
+kernel.rhel,1,Red Hat,kernel-core,5.14.0-687.5.3.el9_8.x86_64,mailto:secalert@redhat.com
+kernel.almalinux,1,AlmaLinux,kernel-core,5.14.0-687.5.3.el9_8.x86_64,mailto:security@almalinux.org
 systemd,1,The systemd Developers,systemd,252,https://systemd.io/
-systemd.rhel,1,Red Hat Enterprise Linux,systemd,252-51.el9_6.2,mailto:secalert@redhat.com
-systemd.almalinux,1,AlmaLinux,systemd,252-51.el9_6.2.alma.2,mailto:security@almalinux.org
+systemd.rhel,1,Red Hat Enterprise Linux,systemd,252-67.el9,mailto:secalert@redhat.com
+systemd.almalinux,1,AlmaLinux,systemd,252-67.el9.alma.1,mailto:security@almalinux.org
 ```
 
 *******************************************************************************
@@ -378,8 +397,8 @@ Yes
 *******************************************************************************
 ### What is the origin and full version number of your bootloader (GRUB2 or systemd-boot or other)?
 *******************************************************************************
-RHEL9 GRUB: grub2-2.06-104.el9_6.alma.1  
-https://vault.almalinux.org/9.6/BaseOS/Source/Packages/grub2-2.06-104.el9_6.alma.1.src.rpm
+RHEL9 GRUB: grub2-2.06-126.el9_8.alma.1
+https://vault.almalinux.org/9.8/BaseOS/Source/Packages/grub2-2.06-126.el9_8.alma.1.src.rpm
 
 
 *******************************************************************************
@@ -408,9 +427,9 @@ No.
 *******************************************************************************
 ### What kernel are you using? Which patches and configuration does it include to enforce Secure Boot?
 *******************************************************************************
-Currently it's RHEL's kernel-5.14.0-570.55.1.el9_6. It has all the necessary patches.  
+Currently it's RHEL's kernel-5.14.0-687.5.3.el9_8. It has all the necessary patches.
 Sources:  
-https://vault.almalinux.org/9.6/BaseOS/Source/Packages/kernel-5.14.0-570.55.1.el9_6.src.rpm
+https://vault.almalinux.org/9.8/BaseOS/Source/Packages/kernel-5.14.0-687.5.3.el9_8.src.rpm
 https://git.almalinux.org/almalinux/kernel/src/branch/a9
 
 *******************************************************************************
@@ -427,7 +446,12 @@ None yet, sorry.
 ### Add any additional information you think we may need to validate this shim signing application.
 *******************************************************************************
 Previous reviews:  
-shim-15.5: rhboot#235  
-shim-15.6: rhboot#250  
-shim-15.8: rhboot#407  
-shim-15.8 aa64: rhboot#432  
+shim-15.5: https://github.com/rhboot/shim-review/issues/235
+shim-15.6: https://github.com/rhboot/shim-review/issues/250
+shim-15.8: https://github.com/rhboot/shim-review/issues/407
+shim-15.8 aa64: https://github.com/rhboot/shim-review/issues/432
+shim-16.1: https://github.com/rhboot/shim-review/issues/510
+
+This submission is exactly the same as https://github.com/rhboot/shim-review/issues/510 but with NX bit enabled by adding `POST_PROCESS_PE_FLAGS="-n -x"` to spec file:
+https://git.almalinux.org/rpms/shim-unsigned-x64/commit/5398b68ced69db4751ac56322e92172792e7a652
+https://git.almalinux.org/rpms/shim-unsigned-aarch64/commit/ef92c226d5c72f9282f1d49c1a026c327b4ee8b9

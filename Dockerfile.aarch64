@@ -1,20 +1,20 @@
-FROM --platform=linux/arm64 almalinux:9.6
+FROM --platform=linux/arm64 almalinux:9.8
 
 COPY rpmmacros /root/.rpmmacros
-COPY shim-unsigned-aarch64-16.1-2.el9.alma.1.src.rpm /
-RUN rpm -ivh shim-unsigned-aarch64-16.1-2.el9.alma.1.src.rpm
-RUN dnf install --releasever=9.6 -y dnf-plugins-core rpm-build almalinux-release-devel gcc-toolset-12-binutils
-RUN dnf builddep -y --enablerepo=crb --enablerepo=devel --releasever=9.6 /builddir/build/SPECS/shim-unsigned-aarch64.spec
+COPY shim-unsigned-aarch64-16.1-2.el9.alma.2.src.rpm /
+RUN rpm -ivh shim-unsigned-aarch64-16.1-2.el9.alma.2.src.rpm
+RUN dnf install --releasever=9.8 -y dnf-plugins-core rpm-build almalinux-release-devel gcc-toolset-12-binutils
+RUN dnf builddep -y --enablerepo=crb --enablerepo=devel --releasever=9.8 /builddir/build/SPECS/shim-unsigned-aarch64.spec
 RUN rpmbuild -bb /builddir/build/SPECS/shim-unsigned-aarch64.spec
 COPY shimaa64.efi /
-RUN rpm2cpio /builddir/build/RPMS/aarch64/shim-unsigned-aarch64-16.1-2.el9.alma.1.aarch64.rpm | cpio -diu
-RUN ls -l /*.efi ./usr/share/shim/16.1-2.el9.alma.1/*/shim*.efi
+RUN rpm2cpio /builddir/build/RPMS/aarch64/shim-unsigned-aarch64-16.1-2.el9.alma.2.aarch64.rpm | cpio -diu
+RUN ls -l /*.efi ./usr/share/shim/16.1-2.el9.alma.2/*/shim*.efi
 
-RUN hexdump -Cv ./usr/share/shim/16.1-2.el9.alma.1/aa64/shimaa64.efi > built-aa64.hex
+RUN hexdump -Cv ./usr/share/shim/16.1-2.el9.alma.2/aa64/shimaa64.efi > built-aa64.hex
 RUN hexdump -Cv /shimaa64.efi > orig-aa64.hex
-RUN /opt/rh/gcc-toolset-12/root/usr/bin/objdump -h /usr/share/shim/16.1-2.el9.alma.1/aa64/shimaa64.efi
+RUN /opt/rh/gcc-toolset-12/root/usr/bin/objdump -h /usr/share/shim/16.1-2.el9.alma.2/aa64/shimaa64.efi
 RUN diff -u orig-aa64.hex built-aa64.hex
-RUN pesign -h -P -i /usr/share/shim/16.1-2.el9.alma.1/aa64/shimaa64.efi
+RUN pesign -h -P -i /usr/share/shim/16.1-2.el9.alma.2/aa64/shimaa64.efi
 RUN pesign -h -P -i /shimaa64.efi
 
-RUN sha256sum /usr/share/shim/16.1-2.el9.alma.1/aa64/shimaa64.efi /shimaa64.efi
+RUN sha256sum /usr/share/shim/16.1-2.el9.alma.2/aa64/shimaa64.efi /shimaa64.efi
